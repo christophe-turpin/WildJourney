@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Sen";
+    src: url("/Sen/Sen-Bold.ttf") format("ttf"),
+    url("/Sen/Sen-Regular.ttf") format("ttf");
+}
+
+
+
 #footer1
 {
     background-color: black;
@@ -20,10 +28,6 @@ body::after{
     z-index: -1;
 }
 
-nav {
-    background-color: rbg (0,0,50);
-}
-
-#carouselExampleCaptions{
-
+body{
+    font-family: 'Sen', sans-serif;
 }
