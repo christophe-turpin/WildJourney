@@ -17,13 +17,33 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">   
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="nav navbar-nav row col-lg-12">
           <li class="nav-item active">
             <a class="nav-link" href="#">Wild Voyages<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Destinations</a>
-          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" href="#">
+              Destinations<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu jqueryFadeIn">
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Amérique du Sud</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Amazonie</a></li>
+                  </ul></li>
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Asie</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Bali</a></li>
+                    <li><a href="#">Japon</a></li>
+                  </ul></li>
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Europe</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Croatie</a></li>
+                  </ul>
+                  </li>
+            </ul>
           <li class="nav-item">
             <a class="nav-link" href="#">Inspirations</a>
           </li>
@@ -46,28 +66,28 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="d-block w-100" alt="...">
+          <img src="asset/photos/amazonie.jpg" class="d-block w-100" alt="Amazonie">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="d-block w-100" alt="...">
+          <img src="asset/photos/bali.jpg" class="d-block w-100" alt="Bali">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="d-block w-100" alt="...">
+          <img src="asset/photos/croatie.jpg" class="d-block w-100" alt="Croatie">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="d-block w-100" alt="...">
+          <img src="asset/photos/japon.jpg" class="d-block w-100" alt="Japon">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -87,10 +107,10 @@
     <section class="filActualites row col-lg-12">
       <section class="listArt col-lg-10">
         <div class="row col-lg-12">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="photoArt1" class="photoResArt col-lg-4">
+          <img src="asset/photos/amazonie.jpg" alt="photoArt1" class="photoResArt col-lg-4">
           <div class="col-lg-8">
-            <h2 class="titleArt ">Titre de l'article 1</h2>
-            <p class="inspiArt">Nature, nourriture, culture</p>
+            <h2 class="titleArt ">L'Amazonie en pirogue</h2>
+            <p class="inspiArt">Nature, gastronomie, culture</p>
             <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
             adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
             euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
@@ -103,10 +123,10 @@
           </div>
         </div>
         <div class="row col-lg-12">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" alt="photoArt2" class="photoResArt col-lg-4">
+          <img src="asset/photos/bali.jpg" alt="photoArt2" class="photoResArt col-lg-4">
           <div class="col-lg-8">
-            <h2 class="titleArt">Titre de l'article 2</h2>
-            <p class="inspiArt">Nature, nourriture, culture</p>
+            <h2 class="titleArt">Bali en VTC</h2>
+            <p class="inspiArt">Nature, Sport, Culture</p>
             <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
             adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
             euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
@@ -119,10 +139,10 @@
           </div>
         </div>
         <div class="row col-lg-12">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" alt="photoArt3" class="photoResArt col-lg-4">
+          <img src="asset/photos/croatie.jpg" alt="photoArt3" class="photoResArt col-lg-4">
           <div class="col-lg-8">
-            <h2 class="titleArt">Titre de l'article 3</h2>
-            <p class="inspiArt">Nature, nourriture, culture</p>
+            <h2 class="titleArt">La Croatie en catamaran</h2>
+            <p class="inspiArt">Navigation, Nature, Culture</p>
             <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
             adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
             euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
@@ -135,10 +155,10 @@
           </div>
         </div>
         <div class="row col-lg-12">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" alt="photoArt4" class="photoResArt col-lg-4">
+          <img src="asset/photos/japon.jpg" alt="photoArt4" class="photoResArt col-lg-4">
           <div class="col-lg-8">
-            <h2 class="titleArt">Titre de l'article 4</h2>
-            <p class="inspiArt">Nature, nourriture, culture</p>
+            <h2 class="titleArt">Le Japon en train magnétique</h2>
+            <p class="inspiArt">Rencontres, Gastronime, Culture</p>
             <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
             adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
             euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
@@ -152,8 +172,8 @@
         </div>
       </section>
       <section id="presentation" class="col-lg-2">
-        <img src="" alt="photo_presentation">
-        <h3>Présentons-Nous</h3>
+        <img src="asset/photos/Image-1.jpg" alt="photo_presentation">
+        <h3>Je me présente</h3>
         <p id="txtPres">Nous écrirons un petit texte pour nous présenter et pour qe les visiteurs puisse s'identifier ou non à
           l'auteur.</p>
       </section>
@@ -212,5 +232,18 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        // Affichage du sous menu en douceur
+        jQuery('ul.nav li.dropdown').hover(function () {
+          jQuery(this).find('.jqueryFadeIn').stop(true, true).delay(200).fadeIn();
+        }, function () {
+          jQuery(this).find('.jqueryFadeIn').stop(true, true).delay(200).fadeOut();
+        });
+
+      });		
+    </script>
   </body>
 </html>
