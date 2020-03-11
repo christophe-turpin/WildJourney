@@ -16,12 +16,12 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light row col-lg-12">   
-      <div class="collapse navbar-collapse col-lg-12" id="navbarSupportedContent">
-        <ul class="nav navbar-nav col-lg-12">
-          <li class="nav-item active">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav col-lg-8">
+          <li class="nav-item active col-lg-3">
             <a class="nav-link" href="#">Wild Voyages<span class="sr-only">(current)</span></a>
           </li>
-          <li class="dropdown">
+          <li class="dropdown col-lg-3">
             <a data-toggle="dropdown" href="#">
               Destinations<b class="caret"></b>
             </a>
@@ -44,21 +44,37 @@
                   </ul>
                   </li>
             </ul>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inspirations</a>
+          <li class="dropdown col-lg-3">
+            <a data-toggle="dropdown" href="#">
+              Inspirations<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu jqueryFadeIn">
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Culture</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Gastronime</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Nature</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Europe</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col-lg-3">
             <a class="nav-link" href="#">Quand partir ?</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form class="form-inline col-lg-4">
+          <input class="form-control col-lg-7" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success col-lg-4" type="submit">Search</button>
         </form>
       </div>
     </nav>
   
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade row col-lg-12" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -69,29 +85,25 @@
         <div class="carousel-item active">
           <img src="asset/photos/amazonie.jpg" class="d-block w-100" alt="Amazonie">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5>L'Amazonie en pirogue</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="asset/photos/bali.jpg" class="d-block w-100" alt="Bali">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5>Bali en VTC</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="asset/photos/croatie.jpg" class="d-block w-100" alt="Croatie">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h5>La Croatie en catamaran</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="asset/photos/japon.jpg" class="d-block w-100" alt="Japon">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h5>Le Japon en train magnétique</h5>
           </div>
         </div>
       </div>
@@ -174,9 +186,9 @@
         </div>
       </section>
       <section id="presentation" class="col-lg-2">
-        <img src="asset/photos/Image-1.jpg" alt="photo_presentation">
-        <h3>Je me présente</h3>
-        <p id="txtPres">Nous écrirons un petit texte pour nous présenter et pour qe les visiteurs puisse s'identifier ou non à
+        <img src="asset/photos/image-1.png" alt="photo_presentation" class="row col-lg-12">
+        <h3 class="row col-lg-12">Je me présente</h3>
+        <p id="txtPres" class="col-lg-12">Nous écrirons un petit texte pour nous présenter et pour qe les visiteurs puisse s'identifier ou non à
           l'auteur.</p>
       </section>
     </section>
