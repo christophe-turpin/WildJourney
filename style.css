@@ -5,12 +5,6 @@
 }
 
 
-
-#footer1
-{
-    background-color: black;
-}
-
 body{
      position: relative;
     }
@@ -30,4 +24,7 @@ body::after{
 
 body{
     font-family: 'Sen', sans-serif;
+}
+.page-footer {
+    background-color: rgb(0,0,50) ;
 }
