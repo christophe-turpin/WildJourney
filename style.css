@@ -7,7 +7,9 @@
 #navbarSupportedContent{
     background-color: blueviolet;
 }
-
+.span{
+    margin-left: 20px;
+}
 body{
     position: relative;
     }
