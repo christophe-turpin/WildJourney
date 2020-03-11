@@ -4,9 +4,12 @@
     url("/Sen/Sen-Regular.ttf") format("ttf");
 }
 
+#navbarSupportedContent{
+    background-color: blueviolet;
+}
 
 body{
-     position: relative;
+    position: relative;
     }
 
 body::after{
