@@ -7,7 +7,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -15,15 +15,17 @@
     <title>Wild Voyages</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light row col-lg-12">   
+    <nav id="paddingnav" class="navbar navbar-expand-lg navbar-light bg-light row col-lg-12">   
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav navbar-nav col-lg-8">
-          <li class="nav-item active col-lg-3">
-            <a class="nav-link" href="index.html">Wild Voyages<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="dropdown col-lg-3">
-            <a data-toggle="dropdown" href="#">
-              Destinations <b class="caret"></b>
+        <li class="nav-item active col-lg-2">
+          <img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo">
+        </li>
+        <div class="espace col-lg-1"></div>
+          <ul class="nav navbar-nav col-lg-6">
+          
+          <li class="dropdown col-lg-4">
+            <a class='color' data-toggle="dropdown" href="#">
+              Destinations<b class="caret"></b>
             </a>
             <ul class="dropdown-menu jqueryFadeIn">
               <li class="dropdown-submenu">
@@ -45,8 +47,8 @@
                   </ul>
                   </li>
             </ul>
-          <li class="dropdown col-lg-3">
-            <a data-toggle="dropdown" href="#">
+          <li class="dropdown col-lg-4">
+            <a class='color' data-toggle="dropdown" href="#">
               Inspirations<b class="caret"></b>
             </a>
             <ul class="dropdown-menu jqueryFadeIn">
@@ -67,10 +69,8 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown col-lg-3">
-            <a data-toggle="dropdown" href="#">
-              Quand partir ?<b class="caret"></b>
-            </a>
+          <li class="dropdown col-lg-4">
+            <a class='color' class="nav-link " href="#">Quand partir ?<b class="caret"></b></a>
             <ul class="dropdown-menu jqueryFadeIn">
               <li class="dropdown-submenu text-center">
                 <a data-toggle="dropdown" tabindex="-1" href="#" onclick="pasDeVoyage()">Janvier</a>
@@ -110,11 +110,10 @@
               </li>
             </ul>
           </li>
-            </ul>
         </ul>
-        <form class="form-inline col-lg-4">
-          <input class="form-control col-lg-7" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success col-lg-4" type="submit">Search</button>
+        <form class="form-inline col-lg-3">
+          <input class="form-control col-lg-6" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success col-lg-5" type="submit">Search</button>
         </form>
       </div>
     </nav>
@@ -128,27 +127,27 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="asset/photos/amazonie.jpg" class="d-block w-100" alt="Amazonie">
+          <img src="asset/photos/amazonie.jpg" class="d-block w-100" alt="Amazonie" id="rogner">
           <div class="carousel-caption d-none d-md-block">
-            <h5>L'Amazonie en pirogue</h5>
+            <h5 id="titrecaroussel">L'Amazonie en pirogue</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="asset/photos/bali.jpg" class="d-block w-100" alt="Bali">
+          <img src="asset/photos/bali.jpg" class="d-block w-100" alt="Bali" id="rogner">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Bali en VTC</h5>
+            <h5 id="titrecaroussel">Bali en VTC</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="asset/photos/croatie.jpg" class="d-block w-100" alt="Croatie">
+          <img src="asset/photos/croatie.jpg" class="d-block w-100" alt="Croatie" id="rogner">
           <div class="carousel-caption d-none d-md-block">
-            <h5>La Croatie en catamaran</h5>
+            <h5 id="titrecaroussel">La Croatie en catamaran</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="asset/photos/japon.jpg" class="d-block w-100" alt="Japon">
+          <img src="asset/photos/japon.jpg" class="d-block w-100" alt="Japon" id="rogner">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Le Japon en train magnétique</h5>
+            <h5 id="titrecaroussel">Le Japon en train magnétique</h5>
           </div>
         </div>
       </div>
