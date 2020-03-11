@@ -20,7 +20,7 @@
 }
 
 #rogner {
-    margin: -150px 0;
+    max-height: 500px;
 }
 
 .carousel-inner {
@@ -49,6 +49,7 @@
 }
 body{
     position: relative;
+    font-family: 'Sen', sans-serif;
     }
 
 body::after{
@@ -66,9 +67,17 @@ body::after{
     z-index: -1;
 }
 
-body{
-    font-family: 'Sen', sans-serif;
-    
+#photPres{
+    margin: 8px;
+}
+#presTitle{
+    margin: 10px;
+    margin-left: 85px;
+}
+
+#textPres{
+    margin-left: 30px;
+
 }
 .page-footer {
     background-color: rgb(0,0,50) ;
