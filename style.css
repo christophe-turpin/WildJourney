@@ -1,11 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: "Sen";
-    src: url("/Sen/Sen-Bold.ttf") format("ttf"),
-    url("/Sen/Sen-Regular.ttf") format("ttf");
+    src: url("Sen/Sen-Bold.ttf") format("ttf"),
+    url("Sen/Sen-Regular.ttf") format("ttf");
 }
 
 #navbarSupportedContent{
-    background-color: blueviolet;
+    background-color: rgb(0,0,50);
+}
+
+#paddingnav, #carouselExampleCaptions{
+    padding: 0;
+    margin: 0;
+}
+
+#rogner {
+    margin: -150px 0;
+}
+
+.carousel-inner {
+    margin-bottom: 70px;
+}
+
+#titrecaroussel{
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 3px 2px 2px black;
+}
+
+.color {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.logo {
+    width: 120%;
+    margin-bottom: 30px;
 }
 
 body{
@@ -17,7 +53,9 @@ body::after{
     background-image: url("asset/photos/fond.jpg");
     opacity: 0.2;
     position: absolute;
-    background-size: contain;
+    background-size: 150% ;
+    background-repeat: no-repeat;
+    background-position: bottom;
     top: 0;
     left: 0;
     bottom : 0;
@@ -27,7 +65,9 @@ body::after{
 
 body{
     font-family: 'Sen', sans-serif;
+    
 }
 .page-footer {
     background-color: rgb(0,0,50) ;
 }
+
