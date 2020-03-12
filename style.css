@@ -91,9 +91,11 @@ body::after{
     text-align: justify;
 }
 
-.txtArt{
+#txtArt{
     text-align: justify;
 }
+
+
 
 /*footer*/
 table {
