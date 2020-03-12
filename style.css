@@ -19,6 +19,9 @@
     margin: 0;
 }
 
+.Active{
+    color: gray;
+}
 #rogner {
     max-height: 500px;
 }
