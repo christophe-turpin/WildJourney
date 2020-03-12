@@ -18,7 +18,7 @@
     <nav id="paddingnav" class="navbar navbar-expand-lg navbar-light bg-light row col-lg-12">   
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <li class="nav-item active col-lg-2">
-          <img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo">
+          <a href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
         </li>
         <div class="espace col-lg-1"></div>
           <ul class="nav navbar-nav col-lg-6">
@@ -29,20 +29,21 @@
             </a>
             <ul class="dropdown-menu jqueryFadeIn">
               <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Amérique du Sud</a>
+                <a data-toggle="dropdown" tabindex="-1" href="#">Amérique du Sud &nbsp&nbsp&#10148</a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Amazonie</a></li>
+                    <li><a href="destinationAmazonie.html">Amazonie</a></li>
                   </ul></li>
               <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Asie</a>
+                <a data-toggle="dropdown" tabindex="-1" href="#">Asie &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  &#10148</a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Bali</a></li>
-                    <li><a href="#">Japon</a></li>
+                    <li><a href="destinationBali.html">Bali</a></li>
+                    <li><a href="destinationJapon.html">Japon</a></li>
                   </ul></li>
               <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Europe</a>
+                <a data-toggle="dropdown" tabindex="-1" href="#">Europe &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#10148</a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Croatie</a></li>
+                    <li><a href="destinationCroatie.html">Croatie</a></li>
                   </ul>
                   </li>
             </ul>
@@ -51,27 +52,71 @@
               Inspirations<b class="caret"></b>
             </a>
             <ul class="dropdown-menu jqueryFadeIn">
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Culture</a>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiCulture.html">Culture</a>
               </li>
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Gastronime</a>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiGastronomie.html">Gastronime</a>
               </li>
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Nature</a>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiNature.html">Nature</a>
               </li>
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Europe</a>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiNavigation.html">Navigation</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiRencontres.html">Rencontres</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiSport.html">Sport</a>
               </li>
             </ul>
           </li>
-          <li class="nav-item col-lg-4">
-            <a class='color' class="nav-link " href="#">Quand partir ?</a>
+          <li class="dropdown col-lg-4">
+            <a class='color' class="nav-link " href="#">Quand partir ?<b class="caret"></b></a>
+            <ul class="dropdown-menu jqueryFadeIn">
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#" onclick="pasDeVoyage()">Janvier</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#" onclick="pasDeVoyage()">Fevrier</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#" onclick="pasDeVoyage()">Mars</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Avril</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Mai</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Juin</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Juillet</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Août</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Septembre</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Octobre</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#" onclick="pasDeVoyage()">Novembre</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a data-toggle="dropdown" tabindex="-1" href="#" onclick="pasDeVoyage()">Décembre</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <form class="form-inline col-lg-3">
-          <input class="form-control col-lg-7" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success col-lg-4" type="submit">Search</button>
+          <input class="form-control col-lg-6" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success col-lg-5" type="submit">Search</button>
         </form>
       </div>
     </nav>
@@ -121,21 +166,13 @@
     </div>
     
     <section class="filActualites row col-lg-12">
-      <section class="listArt col-lg-10">
+      <section class="listArt row col-lg-9">
         <div class="row col-lg-12">
           <img src="asset/photos/amazonie.jpg" alt="photoArt1" class="photoResArt col-lg-4">
           <div class="col-lg-8">
             <h2 class="titleArt ">L'Amazonie en pirogue</h2>
-            <p class="inspiArt">Nature, gastronomie, culture</p>
-            <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
-            adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
-            euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
-            erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-            volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu
-            enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
-            sodales hendrerit.</p>
-            <table> Tableau récapitulatif des dépenses</table>
+            <p class="inspiArt">Navigation, Nature, gastronomie, culture</p>
+            <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
           </div>
         </div>
         <div class="row col-lg-12">
@@ -143,15 +180,7 @@
           <div class="col-lg-8">
             <h2 class="titleArt">Bali en VTC</h2>
             <p class="inspiArt">Nature, Sport, Culture</p>
-            <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
-            adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
-            euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
-            erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-            volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu
-            enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
-            sodales hendrerit.</p>
-            <table> Tableau récapitulatif des dépenses</table>
+            <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
           </div>
         </div>
         <div class="row col-lg-12">
@@ -159,15 +188,7 @@
           <div class="col-lg-8">
             <h2 class="titleArt">La Croatie en catamaran</h2>
             <p class="inspiArt">Navigation, Nature, Culture</p>
-            <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
-            adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
-            euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
-            erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-            volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu
-            enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
-            sodales hendrerit.</p>
-            <table> Tableau récapitulatif des dépenses</table>
+            <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
           </div>
         </div>
         <div class="row col-lg-12">
@@ -175,23 +196,14 @@
           <div class="col-lg-8">
             <h2 class="titleArt">Le Japon en train magnétique</h2>
             <p class="inspiArt">Rencontres, Gastronime, Culture</p>
-            <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
-            adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
-            euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
-            erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-            volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu
-            enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
-            sodales hendrerit.</p>
-            <table> Tableau récapitulatif des dépenses</table>
+            <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
           </div>
         </div>
       </section>
-      <section id="presentation" class="col-lg-2">
-        <img src="asset/photos/image-1.png" alt="photo_presentation" class="row col-lg-12">
-        <h3 class="row col-lg-12">Je me présente</h3>
-        <p id="txtPres" class="col-lg-12">Nous écrirons un petit texte pour nous présenter et pour qe les visiteurs puisse s'identifier ou non à
-          l'auteur.</p>
+      <section id="presentation" class="col-lg-3">
+        <img src="asset/photos/image-1.png" id="photPres" alt="photo_presentation" class="row col-lg-12">
+        <h4 id="presTitle">A propos de moi</h4>
+        <p id="txtPres" class="col-lg-12">Je suis un jeune homme de presque 2 ans. Et j'ai décidé de partager mes nombreux voyages ainsi que ma grande expérience afin de pouvoir vous aider à choisir entre toutes les destinations possibles. J'enrichirais ce blog au fur et à mesure que je voyagerais et je vous laisserais l'opportunité de trier les articles par Destinations, par Inspirations(qui sont en fait les points d'intérêts du voyage), ainsi que par période afin d'être sur de pouvoir profiter des mêmes aspects du voyage en question.</p>
       </section>
     </section>
 
@@ -234,12 +246,6 @@
       </div>
       <!-- Footer Elements -->
 
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href=""> Wild Voyages</a>
-      </div>
-      <!-- Copyright -->
-
     </footer>
     <!-- Footer -->
 
@@ -264,5 +270,6 @@
 
       });		
     </script>
+    <script src="essai.js"></script>
   </body>
 </html>
