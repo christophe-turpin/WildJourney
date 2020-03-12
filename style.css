@@ -6,6 +6,10 @@
     url("Sen/Sen-Regular.ttf") format("ttf");
 }
 
+.row{
+    margin: 0;
+    padding: 0;
+}
 *{
     margin: 0;
     padding: 0;
@@ -92,7 +96,6 @@ body::after{
     font-size: 1.2em;
 }
 
-}
 .inspiArt{
     font-size: 1.4em;
     font-weight: bold;
