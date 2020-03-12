@@ -95,11 +95,21 @@ body::after{
     text-align: justify;
 }
 
-.photoResArt{
-
-}
 
 /*footer*/
+table {
+    border-collapse: collapse;
+    font-size: 20px;
+}
+  
+tr {
+    border-bottom: solid 2px #041C9C;
+}
+  
+th {
+    width: 80%;
+}
+
 .page-footer {
     background-color: rgb(0,0,50) ;
 }
