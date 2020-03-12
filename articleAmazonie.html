@@ -15,64 +15,115 @@
     <title>Wild Voyages</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light row col-lg-12">   
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav navbar-nav col-lg-8">
-          <li class="nav-item active col-lg-3">
-            <a class="nav-link" href="#">Wild Voyages<span class="sr-only">(current)</span></a>
+    <nav id="paddingnav" class="navbar navbar-expand-lg navbar-light bg-light row col-lg-12">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <li class="nav-item active col-lg-2">
+            <a href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
           </li>
-          <li class="dropdown col-lg-3">
-            <a data-toggle="dropdown" href="#">
-              Destinations<b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu jqueryFadeIn">
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Amérique du Sud</a>
+          <div class="espace col-lg-1"></div>
+          <ul class="nav navbar-nav col-lg-6">
+    
+            <li class="dropdown col-lg-4">
+              <a class='color' data-toggle="dropdown" href="#">
+                Destinations<b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu jqueryFadeIn">
+                <li class="dropdown-submenu">
+                  <a data-toggle="dropdown" tabindex="-1" href="#">Amérique du Sud &nbsp&nbsp&#10148</a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Amazonie</a></li>
-                  </ul></li>
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Asie</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Bali</a></li>
-                    <li><a href="#">Japon</a></li>
-                  </ul></li>
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Europe</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Croatie</a></li>
+                    <li><a href="destinationAmazonie.html">Amazonie</a></li>
                   </ul>
-                  </li>
-            </ul>
-          <li class="dropdown col-lg-3">
-            <a data-toggle="dropdown" href="#">
-              Inspirations<b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu jqueryFadeIn">
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Culture</a>
-              </li>
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Gastronime</a>
-              </li>
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Nature</a>
-              </li>
-              <li class="dropdown-submenu">
-                <a data-toggle="dropdown" tabindex="-1" href="#">Europe</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item col-lg-3">
-            <a class="nav-link" href="#">Quand partir ?</a>
-          </li>
-        </ul>
-        <form class="form-inline col-lg-4">
-          <input class="form-control col-lg-7" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success col-lg-4" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+                </li>
+                <li class="dropdown-submenu">
+                  <a data-toggle="dropdown" tabindex="-1" href="#">Asie
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &#10148</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="destinationBali.html">Bali</a></li>
+                    <li><a href="destinationJapon.html">Japon</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a data-toggle="dropdown" tabindex="-1" href="#">Europe
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#10148</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="destinationCroatie.html">Croatie</a></li>
+                  </ul>
+                </li>
+              </ul>
+            <li class="dropdown col-lg-4">
+              <a class='color' data-toggle="dropdown" href="#">
+                Inspirations<b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu jqueryFadeIn">
+                <li class="dropdown-submenu text-center">
+                  <a href="inspiCulture.html">Culture</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="inspiGastronomie.html">Gastronime</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="inspiNature.html">Nature</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="inspiNavigation.html">Navigation</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="inspiRencontres.html">Rencontres</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="inspiSport.html">Sport</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown col-lg-4">
+              <a class='color' class="nav-link " href="#">Quand partir ?<b class="caret"></b></a>
+              <ul class="dropdown-menu jqueryFadeIn">
+                <li class="dropdown-submenu text-center">
+                  <a href="#" onclick="pasDeVoyage()">Janvier</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="#" onclick="pasDeVoyage()">Fevrier</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="#" onclick="pasDeVoyage()">Mars</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="avril.html">Avril</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="mai.html">Mai</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="juin.html">Juin</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="juillet.html">Juillet</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="aout.html">Août</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="septembre.html">Septembre</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="octobre.html">Octobre</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="#" onclick="pasDeVoyage()">Novembre</a>
+                </li>
+                <li class="dropdown-submenu text-center">
+                  <a href="#" onclick="pasDeVoyage()">Décembre</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="form-inline col-lg-3">
+            <input class="form-control col-lg-6" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success col-lg-5" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
   
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade row col-lg-12" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -172,53 +223,46 @@
             </tbody>  
           </table>
         </section>
-        <!-- Footer --> 
-    <footer class="page-footer font-small pt-4">
-        <!-- Footer Elements -->
-        <div class="row">
-          <div class="container col-lg-6">
-              <!--Grid column-->
-            <div class="text-right">
-              <h6 class="mb-0 white-text">Envie de voyager ? Suivez-nous !</h6>
-            </div>
-          </div>
-  
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-left col-lg-6">
-              <li class="list-inline-item">
-                <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/" target="_blank">
-                  <i class="fab fa-facebook-f"> </i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1" href="https://twitter.com/" target="_blank">
-                  <i class="fab fa-twitter"> </i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-in mx-1" href="https://www.instagram.com/" target="_blank">
-                  <i class="fab fa-instagram"> </i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-pi mx-1" href="https://www.pinterest.fr/" target="_blank">
-                  <i class="fab fa-pinterest"> </i>
-                </a>
-              </li>
-            </ul>
-            <!-- Social buttons -->
-          </div>
+        <!-- Footer -->
+  <footer class="page-footer font-small pt-4">
+    <!-- Footer Elements -->
+    <div class="row">
+      <div class="container col-lg-6">
+        <!--Grid column-->
+        <div class="text-right">
+          <h6 class="mb-0 white-text">Envie de voyager ? Suivez-nous !</h6>
         </div>
-        <!-- Footer Elements -->
-  
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href=""> Wild Voyages</a>
-        </div>
-        <!-- Copyright -->
-  
-      </footer>
-      <!-- Footer -->
+      </div>
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-left col-lg-6">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1" href="https://twitter.com/" target="_blank">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-in mx-1" href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-pi mx-1" href="https://www.pinterest.fr/" target="_blank">
+            <i class="fab fa-pinterest"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+    </div>
+    </div>
+    <!-- Footer Elements -->
+
+  </footer>
   
       <!-- JQuery -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
