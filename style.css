@@ -1,8 +1,9 @@
 @font-face {
     font-family: "Sen";
-    src: url("/Sen/Sen-Bold.ttf") format("ttf"),
-    url("/Sen/Sen-Regular.ttf") format("ttf");
+    src: url("Sen/Sen-Bold.ttf") format("ttf"),
+    url("Sen/Sen-Regular.ttf") format("ttf");
 }
+
 
 #navbarSupportedContent{
     background-color: blueviolet;
