@@ -6,6 +6,10 @@
     url("Sen/Sen-Regular.ttf") format("ttf");
 }
 
+.row{
+    margin: 0;
+    padding: 0;
+}
 *{
     margin: 0;
     padding: 0;
