@@ -39,7 +39,8 @@
     color: gray;
 }
 #rogner {
-    max-height: 500px;
+    margin-bottom: -150px;
+    margin-top: -150px;
 }
 
 .carousel-inner {
@@ -55,11 +56,15 @@
 .span{
     margin-left: 20px;
 }
+/*position detail arborescence */
+#position{ margin-left: 20px;
+}
 
 /*background*/
 body{
     position: relative;
     font-family: 'Sen', sans-serif;
+    overflow-x: hidden;
     }
 
 body::after{
@@ -78,33 +83,37 @@ body::after{
 }
 
 /*articles*/
-#photPres{
-    margin: 8px;
-}
+    
 #presTitle{
     margin: 10px;
     margin-left: 85px;
 }
 
-#txtArt{
+.titleArt{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    }
+
+.txtArt{
     text-align: justify;
-    line-height: 1.4;
-    font-size: 1.2em;
+    line-height: 1.3;
+    font-size: 1em;
 }
 
-}
 .inspiArt{
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: bold;
 }
 
-.photoResArt{
-    margin-bottom: 20px;
-    margin-top: 80px;
+.lienvoirarticle {
+    font-size: 14px;
 }
 
-.titleArt{
-    margin-top: 80px;
+.photoResArt{
+    margin-bottom: 50px;
+    margin-top: 10px;
+    height: 300px; 
 }
 
 /*presentation*/
@@ -119,10 +128,11 @@ em{
 
 #presentation{
     background-color: rgba(255,255,255,0.5);
-    height: 900px;
+    height: 865px;
    }
 #photPres{
-    margin-top: 20px;
+    margin: 8px;
+    margin-top: 40px;
     padding-right: 30px;
 }
 
