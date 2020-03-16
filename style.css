@@ -51,9 +51,7 @@ body {
     justify-content: stretch;
 }
 
-.openbtn{
-    display: none;
-}
+
 
 #mySideBar
 
@@ -70,6 +68,9 @@ body {
 .logo {
     width: 120%;
     margin-bottom: 30px;
+    font-family: Harlow;
+    text-decoration: solid;
+    font-style: italic bold;
 }
 
 
