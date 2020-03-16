@@ -4,25 +4,15 @@ function pasDeVoyage() {
 }
 
 function openNav() {
-<<<<<<< HEAD
     document.getElementById("mySidenav").style.width = "250px";
-=======
-    document.getElementById("mySidebar").style.width = "250px";
->>>>>>> c2ab19d5715e4d50dd8747ac7e5cea7c4e395bc6
     document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
-<<<<<<< HEAD
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
 
-=======
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
->>>>>>> c2ab19d5715e4d50dd8747ac7e5cea7c4e395bc6
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
