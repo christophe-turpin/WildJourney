@@ -17,14 +17,29 @@
 </head>
 
 <body>
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <button class="dropdown-btn">Destinations<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Amérique du Sud</button>
+      <div class="dropdown-container">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <input type="search" href="#contact" placeholder="Recherche"></input>
+  </nav>
   <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-md-12">
+    <button class="openbtn" onclick="openNav()">☰</button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <li id="ligo" class="nav-item col-md-2">
+      <li id="ligo" class="nav-item col-md-2 col-8">
         <a href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
       </li>
-      <ul class="nav navbar-nav col-md-6">
+      <ul id="navbarList" class="nav navbar-nav col-md-10">
   
-        <li class="dropdown col-md-4 text-left">
+        <li class="dropdown col-md-3 text-left">
           <a class='color' data-toggle="dropdown" href="#">
             Destinations<b class="caret"></b>
           </a>
@@ -52,7 +67,7 @@
               </ul>
             </li>
           </ul>
-        <li class="dropdown col-md-4 text-left">
+        <li class="dropdown col-md-3 text-left">
           <a class='color' data-toggle="dropdown" href="#">
             Inspirations<b class="caret"></b>
           </a>
@@ -77,7 +92,7 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown Active col-md-4 text-left">
+        <li class="dropdown Active col-md-3 text-left">
           <a class='color' class="nav-link " href="#">Quand partir ?<b class="caret"></b></a>
           <ul class="dropdown-menu jqueryFadeIn">
             <li class="dropdown-submenu text-center">
@@ -118,11 +133,11 @@
             </li>
           </ul>
         </li>
-      </ul>
-      <form class="form-inline col-md-4">
-        <input class="form-control col-md-7" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success col-md-4" type="submit">Recherche</button>
+      <form class="form-inline col-md-3">
+        <input class="form-control col-md-11" type="search" placeholder="Search" aria-label="Search">
+        <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
       </form>
+      </ul>
     </div>
   </nav>
 
@@ -172,7 +187,7 @@
   <section class="filActualites row col-lg-12">
     <section class="listArt row col-lg-9">
       <div class="row col-lg-12">
-        <img src="asset/photos/amazonie.jpg" alt="photoArt1" class="photoResArt col-lg-4">
+        <img src="asset/photos/aamazonie.jpg" alt="photoArt1" class="photoResArt col-lg-4">
         <div class="col-lg-8">
           <h2 class="titleArt ">L'Amazonie en pirogue</h2>
           <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
@@ -210,10 +225,31 @@
         </div>
       </div>
       <div class="row col-lg-12">
-        <img src="asset/photos/bali.jpg" alt="photoArt2" class="photoResArt col-lg-4">
+        <img src="asset/photos/abali.jpg" alt="photoArt2" class="photoResArt col-lg-4">
         <div class="col-lg-8">
           <h2 class="titleArt">Bali en VTC</h2>
-          <p class="inspiArt">Nature, Sport, Culture, Rencontres</p>
+          <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left"></ul>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-in mx-1" href="inspiNature.html">
+              Nature
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1" href="inspiSport.html">
+              Sport
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1" href="inspiCulture.html">
+              Culture
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-in mx-1" href="inspiRencontres.html">
+              Rencontres
+            </a>
+          </li>
+        </ul>
           <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
             tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
             ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
@@ -223,12 +259,30 @@
             ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
             Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
             sodales hendrerit.</p>
+            <a class="lienvoirarticle" href="articleBali.html">Voir l'article</a>
         </div>
       </div>
       <div class="row col-lg-12">
-        <img src="asset/photos/croatie.jpg" alt="photoArt3" class="photoResArt col-lg-4">
+        <img src="asset/photos/acroatie.jpg" alt="photoArt3" class="photoResArt col-lg-4">
         <div class="col-lg-8">
           <h2 class="titleArt">La Croatie en catamaran</h2>
+          <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left"></ul>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-in mx-1" href="inspiNavigation.html">
+              Navigation
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1" href="inspiNature.html">
+              Nature
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-in mx-1" href="inspiCulture.html">
+              Culture
+            </a>
+          </li>
+          </ul>
           <p class="inspiArt">Navigation, Nature, Culture</p>
           <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
             tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
@@ -239,12 +293,31 @@
             ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
             Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
             sodales hendrerit.</p>
+            <a class="lienvoirarticle" href="articleCroatie.html">Voir l'article</a>
         </div>
       </div>
       <div class="row col-lg-12">
-        <img src="asset/photos/japon.jpg" alt="photoArt4" class="photoResArt col-lg-4">
+        <img src="asset/photos/ajapon.jpg" alt="photoArt4" class="photoResArt col-lg-4">
         <div class="col-lg-8">
           <h2 class="titleArt">Le Japon en train magnétique</h2>
+          <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left"></ul>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-in mx-1" href="inspiRencontres.html">
+              Rencontres
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1" href="inspiGastronomie.html">
+              Gastronomie
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1" href="inspiCulture.html">
+              Culture
+            </a>
+          </li>
+          
+          </ul>
           <p class="inspiArt">Rencontres, Gastronomie, Culture</p>
           <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
             tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
@@ -255,6 +328,7 @@
             ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
             Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
             sodales hendrerit.</p>
+            <a class="lienvoirarticle" href="articleJapon.html">Voir l'article</a>
         </div>
       </div>
     </section>
