@@ -23,23 +23,55 @@
     <button class="dropdown-btn">Destinations<i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-      <button class="dropdown-btn">Amérique du Sud</button>
+      <button class="dropdown-btn">Amérique du Sud<i class="fa fa-caret-down"></i></button>
       <div class="dropdown-container">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="destinationAmazonie.html">Amazonie</a>
+      </div>
+      <button class="dropdown-btn">Asie<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-container">
+        <a href="destinationBali.html">Bali</a>
+        <a href="destinationJapon.html">Japon</a>
+      </div>
+      <button class="dropdown-btn">Europe<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-container">
+        <a href="destinationCroatie.html">Croatie</a>
       </div>
     </div>
-    <input type="search" href="#contact" placeholder="Recherche"></input>
+    <button class="dropdown-btn">Inspirations<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="inspiCulture.html">Culture</a>
+      <a href="inspiGastronomie.html">Gastronomie</a>
+      <a href="inspiNature.html">Nature</a>
+      <a href="inspiNavigation.html">Navigation</a>
+      <a href="inspiRencontres.html">Rencontres</a>
+      <a href="inspiSport.html">Sport</a>
+    </div>
+    <button class="dropdown-btn">Quand partir ?<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a onclick="pasDeVoyage()">Janvier</a>
+      <a onclick="pasDeVoyage()">Février</a>
+      <a onclick="pasDeVoyage()">Mars</a>
+      <a href="avril.html">Avril</a>
+      <a href="mai.html">Mai</a>
+      <a href="juin.html">Juin</a>
+      <a href="juillet.html">Juillet</a>
+      <a href="aout.html">Août</a>
+      <a href="septembre.html">Septembre</a>
+      <a href="octobre.html">Octobre</a>
+      <a onclick="pasDeVoyage()">Novembre</a>
+      <a onclick="pasDeVoyage()">Décembre</a>
+    </div>
+    <input id="mobileSearch" type="search" href="#contact" placeholder="Recherche"></input>
   </nav>
-  <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-md-12">
-    <button class="openbtn" onclick="openNav()">☰</button>
+  <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-12">
+    <button class="openbtn col-xs-2" onclick="openNav()">☰</button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <li id="ligo" class="nav-item col-md-2 col-8">
-        <a href="index.html"><h4 class="logo" alt="logo">Wild Voyages</a>
+      <li id="ligo" class="nav-item col-md-3 col-sm-4 col-xs-8 text-center">
+        <a href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
       </li>
-      <ul id="navbarList" class="nav navbar-nav col-md-10">
-  
+      <ul id="navbarList" class="nav navbar-nav col-md-10 col-sm-1">  
         <li class="dropdown col-md-3 text-left">
           <a class='color' data-toggle="dropdown" href="#">
             Destinations<b class="caret"></b>
@@ -135,14 +167,12 @@
           </ul>
         </li>
       <form class="form-inline col-md-3">
-        <input class="form-control col-md-11" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control col-md-7" type="search" placeholder="Search" aria-label="Search">
         <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
       </form>
       </ul>
     </div>
   </nav>
-
-
 
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -188,12 +218,12 @@
     </a>
   </div>
   <section class="filActualites row col-lg-12">
-    <section class="listArt row col-lg-9">
-      <div class="row col-lg-12">
+    <section class="listArt row col-lg-9 col-md-11 col-sm-12 text-center">
+      <div class="liste row col-lg-12">
         <img src="asset/photos/aamazonie.jpg" alt="photoArt1" class="photoResArt col-lg-4">
-        <div class="col-lg-8">
+        <div class="article col-lg-8">
           <h2 class="titleArt">L'Amazonie en pirogue</h2>
-          <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+          <ul id="inspiList" class="list-unstyled list-inline text-left">
             <li class="list-inline-item">
               <a class="btn-floating btn-in mx-1" href="inspiNavigation.html">
                 Navigation
@@ -231,7 +261,7 @@
         <img src="asset/photos/abali.jpg" alt="photoArt2" class="photoResArt col-lg-4">
         <div class="col-lg-8">
           <h2 class="titleArt">Bali en VTC</h2>
-          <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+          <ul id="inspiList" class="list-unstyled list-inline text-left">
             <li class="list-inline-item">
               <a class="btn-floating btn-in mx-1" href="inspiNature.html">
                 Nature
@@ -267,9 +297,9 @@
       </div>
       <div class="row col-lg-12">
         <img src="asset/photos/acroatie.jpg" alt="photoArt3" class="photoResArt col-lg-4">
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
           <h2 class="titleArt">La Croatie en catamaran</h2>
-          <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+          <ul id="inspiList" class="list-unstyled list-inline text-left">
             <li class="list-inline-item">
               <a class="btn-floating btn-in mx-1" href="inspiNavigation.html">
                 Navigation
@@ -302,7 +332,7 @@
         <img src="asset/photos/ajapon.jpg" alt="photoArt4" class="photoResArt col-lg-4">
         <div class="col-lg-8">
           <h2 class="titleArt">Le Japon en train magnétique</h2>
-          <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+          <ul id="inspiList" class="list-unstyled list-inline text-left">
             <li class="list-inline-item">
               <a class="btn-floating btn-in mx-1" href="inspiRencontres.html">
                 Rencontres
@@ -332,7 +362,7 @@
         </div>
       </div>
     </section>
-    <section id="presentation" class="col-lg-3">
+    <section id="presentation" class="col-lg-3 col-md-11 col-sm-12">
       <img src="asset/photos/image-1.png" id="photPres" alt="photo_presentation" class="row col-lg-12">
       <h4 id="presTitle">A propos de moi</h4>
       <p id="txtPres" class="col-lg-12">Je suis un jeune homme de presque 2 ans. <br> Et j'ai décidé de partager mes
@@ -409,7 +439,8 @@
       });
 
     });		
-  </script>
+    
+  </script> 
   <script src="essai.js"></script>
 </body>
 

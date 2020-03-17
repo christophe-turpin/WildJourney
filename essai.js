@@ -5,13 +5,15 @@ function pasDeVoyage() {
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("paddingnav").style.marginLeft = "250px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("paddingnav").style.marginLeft = "0";
 }
+
+
 
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;

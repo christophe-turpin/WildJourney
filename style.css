@@ -49,15 +49,13 @@ body {
     max-height: 70px;
     display: flex;
     justify-content: stretch;
+    align-items: center;
 }
 
-
-
-#mySideBar
-
-#ligo {
-    margin-right: 40px;
+li{
+    list-style-type: none;
 }
+
 .color {
     color: white;
     font-weight: bold;
@@ -66,11 +64,7 @@ body {
 }
 
 .logo {
-    width: 120%;
-    margin-bottom: 30px;
-    font-family: Harlow;
-    text-decoration: solid;
-    font-style: italic bold;
+    height: 70px;
 }
 
 
@@ -115,7 +109,7 @@ body::after{
     opacity: 0.2;
     position: absolute;
     background-size: 250% ;
-    background-repeat: no-repeat;
+    background-repeat: space;
     background-position: bottom;
     top: 0;
     left: 0;
@@ -124,48 +118,7 @@ body::after{
     z-index: -1;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 50);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
 
-.sidenav a,
-.dropdown-btn {
-    padding: 8px 8px 8px 32px;
-    border: none;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-    transition: 0.3s;
-    cursor: pointer;
-    outline: none;
-    background-color: rgb(0, 0, 50);
-    color: white;
-}
-
-.sidenav a:hover,
-.dropdown-btn:hover {
-    color: rgb(0, 25, 50);
-    background-color: white;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    color: white;
-    padding: 0px;
-}
 
 .active {
     background-color: rgb(0, 25, 50);
@@ -268,19 +221,16 @@ footer {
     margin-top: 70px;
 }
 
+
+
 @media screen and (min-width: 961px) {
     .openbtn {
         display: none;
     }
-}
 
-.openbtn:hover {
-    background-color: rgb(0, 25, 50);
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
+    .sidenav{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 961px) {
@@ -292,16 +242,76 @@ footer {
         padding: 20px 20px;
         border: none;
     }
+
+    .openbtn:hover {
+    background-color: rgb(0, 25, 50);
+    }  
+
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 50);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+
+    .sidenav a,
+    .dropdown-btn {
+        padding: 8px 8px 8px 32px;
+        border: none;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+        outline: none;
+        background-color: rgb(0, 0, 50);
+        color: white;
+    }
+
+    .sidenav a:hover,
+    .dropdown-btn:hover {
+        color: rgb(0, 25, 50);
+        background-color: white;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
+        padding: 0px;
+    }
+
+    #mobileSearch{
+        margin-left: 25px;
+    }
     
     #navbarList{
         display: none;
     }
-    .logo {
-        max-height: 70px;
+
+    #paddingnav {
+    transition: margin-left .5s;
     }
+    
     #carouselExampleCaptions{
         display: none;
     }
+
+    .filActualites {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-height: 450px) {
