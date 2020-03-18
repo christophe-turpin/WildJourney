@@ -14,7 +14,6 @@ function closeNav() {
 }
 
 
-
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
@@ -29,3 +28,11 @@ for (i = 0; i < dropdown.length; i++) {
         }
     });
 }
+
+$(document).ready(function() {
+  $("[list='ccList']")
+});
+
+function changePage() {
+    window.location = $("a").attr("href")
+};
