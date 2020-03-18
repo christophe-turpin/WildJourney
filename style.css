@@ -108,7 +108,7 @@ body::after{
     background-image: url("asset/photos/fond.jpg");
     opacity: 0.2;
     position: absolute;
-    background-size: 250% ;
+    background-size: cover;
     background-repeat: space;
     background-position: bottom;
     top: 0;
