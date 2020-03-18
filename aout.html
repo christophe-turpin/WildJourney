@@ -17,14 +17,61 @@
 </head>
 
 <body>
-    <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-md-12">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <li id="ligo" class="nav-item col-md-2">
-                <a href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <button class="dropdown-btn">Destinations<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <button class="dropdown-btn">Amérique du Sud<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="destinationAmazonie.html">Amazonie</a>
+            </div>
+            <button class="dropdown-btn">Asie<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="destinationBali.html">Bali</a>
+                <a href="destinationJapon.html">Japon</a>
+            </div>
+            <button class="dropdown-btn">Europe<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="destinationCroatie.html">Croatie</a>
+            </div>
+        </div>
+        <button class="dropdown-btn">Inspirations<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="inspiCulture.html">Culture</a>
+            <a href="inspiGastronomie.html">Gastronomie</a>
+            <a href="inspiNature.html">Nature</a>
+            <a href="inspiNavigation.html">Navigation</a>
+            <a href="inspiRencontres.html">Rencontres</a>
+            <a href="inspiSport.html">Sport</a>
+        </div>
+        <button class="dropdown-btn active">Quand partir ?<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a onclick="pasDeVoyage()">Janvier</a>
+            <a onclick="pasDeVoyage()">Février</a>
+            <a onclick="pasDeVoyage()">Mars</a>
+            <a href="avril.html">Avril</a>
+            <a href="mai.html">Mai</a>
+            <a href="juin.html">Juin</a>
+            <a href="juillet.html">Juillet</a>
+            <a class="active" href="aout.html">Août</a>
+            <a href="septembre.html">Septembre</a>
+            <a href="octobre.html">Octobre</a>
+            <a onclick="pasDeVoyage()">Novembre</a>
+            <a onclick="pasDeVoyage()">Décembre</a>
+        </div>
+        <input id="mobileSearch" type="search" href="#contact" placeholder="Recherche"></input>
+    </nav>
+    <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-12">
+        <button class="openbtn col-sm-2 col-xs-2" onclick="openNav()">☰</button>
+        <div class="collapse navbar-collapse col-md-12 col-sm-10 col-xs-9" id="navbarSupportedContent">
+            <li id="ligo" class="nav-item col-md-3 col-sm-4 col-xs-8 text-center">
+                <a class="" href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
             </li>
-            <ul class="nav navbar-nav col-md-6">
-
-                <li class="dropdown col-md-4 text-left">
+            <ul id="navbarList" class="nav navbar-nav col-md-10 col-sm-1">
+                <li class="dropdown col-md-3 text-left">
                     <a class='color' data-toggle="dropdown" href="#">
                         Destinations<b class="caret"></b>
                     </a>
@@ -52,7 +99,7 @@
                             </ul>
                         </li>
                     </ul>
-                <li class="dropdown col-md-4 text-left">
+                <li class="dropdown col-md-3 text-left">
                     <a class='color' data-toggle="dropdown" href="#">
                         Inspirations<b class="caret"></b>
                     </a>
@@ -77,7 +124,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown Active col-md-4 text-left">
+                <li class="dropdown col-md-3 text-left active">
                     <a class='color' class="nav-link " href="#">Quand partir ?<b class="caret"></b></a>
                     <ul class="dropdown-menu jqueryFadeIn">
                         <li class="dropdown-submenu text-center">
@@ -101,8 +148,8 @@
                         <li class="dropdown-submenu text-center">
                             <a href="juillet.html">Juillet</a>
                         </li>
-                        <li class="dropdown-submenu Active text-center">
-                            <a href="aout.html">Août</a>
+                        <li class="dropdown-submenu text-center">
+                            <a class="active" href="aout.html">Août</a>
                         </li>
                         <li class="dropdown-submenu text-center">
                             <a href="septembre.html">Septembre</a>
@@ -118,11 +165,11 @@
                         </li>
                     </ul>
                 </li>
+                <form class="form-inline col-md-3">
+                    <input class="form-control col-md-7" type="search" placeholder="Search" aria-label="Search">
+                    <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
+                </form>
             </ul>
-            <form class="form-inline col-md-4">
-                <input class="form-control col-md-7" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success col-md-4" type="submit">Recherche</button>
-            </form>
         </div>
     </nav>
 
@@ -141,7 +188,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/Arbre-foret-amazonienne.jpg" class="d-block w-100" alt="Amazonie" id="rogner">
+                <img src="asset/photos/amazonie1.jpg" class="d-block w-100" alt="Amazonie" id="rogner">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 id="titrecaroussel">L'Amazonie en pirogue</h5>
                 </div>
@@ -244,146 +291,232 @@
     <div id="position">
         <h4>Quand partir ? > août</h4>
     </div>
-    <section class="filActualites row col-md-12">
-        <section class="listArt row col-md-12">
-            <div class="row col-md-12">
-                <img src="asset/photos/amazonie.jpg" alt="photoArt1" class="photoResArt col-md-4">
-                <div class="col-md-8">
-                    <h2 class="titleArt ">L'Amazonie en pirogue</h2>
-                    <p class="inspiArt">Nature, gastronomie, culture</p>
-                    <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras
-                        elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin
-                        porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
-                        erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
-                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum
-                        augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut
-                        augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas
-                        adipiscing ante non diam sodales hendrerit.</p>
-                </div>
+    <section class="listArt row col-lg-12">
+        <div class="row col-lg-12">
+            <img src="asset/photos/aamazonie.jpg" alt="photoArt1" class="photoResArt col-lg-4">
+            <div class="col-lg-8">
+                <h2 class="titleArt">L'Amazonie en pirogue</h2>
+                <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-in mx-1" href="inspiNavigation.html">
+                            Navigation
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-fb mx-1" href="inspiNature.html">
+                            Nature
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-tw mx-1" href="inspiGastronomie.html">
+                            Gastronomie
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-in mx-1" href="inspiCulture.html">
+                            Culture
+                        </a>
+                    </li>
+                </ul>
+                <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+                    tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+                    ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim
+                    est
+                    eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
+                    consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras
+                    vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
+                    dui
+                    ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                    cubilia
+                    Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
+                    sodales hendrerit.</p>
+                <a class="lienvoirarticle" href="articleAmazonie.html">Voir l'article</a>
             </div>
-            <div class="row col-md-12">
-                <img src="asset/photos/bali.jpg" alt="photoArt2" class="photoResArt col-md-4">
-                <div class="col-md-8">
-                    <h2 class="titleArt">Bali en VTC</h2>
-                    <p class="inspiArt">Nature, Sport, Culture, Rencontres</p>
-                    <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras
-                        elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin
-                        porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
-                        erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
-                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum
-                        augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut
-                        augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas
-                        adipiscing ante non diam sodales hendrerit.</p>
-                </div>
+        </div>
+        <div class="row col-lg-12">
+            <img src="asset/photos/abali.jpg" alt="photoArt2" class="photoResArt col-lg-4">
+            <div class="col-lg-8">
+                <h2 class="titleArt">Bali en VTC</h2>
+                <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-in mx-1" href="inspiNature.html">
+                            Nature
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-fb mx-1" href="inspiSport.html">
+                            Sport
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-tw mx-1" href="inspiCulture.html">
+                            Culture
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-in mx-1" href="inspiRencontres.html">
+                            Rencontres
+                        </a>
+                    </li>
+                </ul>
+                <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+                    tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+                    ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim
+                    est
+                    eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
+                    consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras
+                    vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
+                    dui
+                    ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                    cubilia
+                    Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
+                    sodales hendrerit.</p>
+                <a class="lienvoirarticle" href="articleBali.html">Voir l'article</a>
             </div>
-            <div class="row col-md-12">
-                <img src="asset/photos/croatie.jpg" alt="photoArt3" class="photoResArt col-md-4">
-                <div class="col-md-8">
-                    <h2 class="titleArt">La Croatie en catamaran</h2>
-                    <p class="inspiArt">Navigation, Nature, Culture</p>
-                    <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras
-                        elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin
-                        porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
-                        erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
-                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum
-                        augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut
-                        augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas
-                        adipiscing ante non diam sodales hendrerit.</p>
-                </div>
+        </div>
+        <div class="row col-lg-12">
+            <img src="asset/photos/acroatie.jpg" alt="photoArt3" class="photoResArt col-lg-4">
+            <div class="col-lg-8">
+                <h2 class="titleArt">La Croatie en catamaran</h2>
+                <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left"></ul>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-in mx-1" href="inspiNavigation.html">
+                        Navigation
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="inspiNature.html">
+                        Nature
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-in mx-1" href="inspiCulture.html">
+                        Culture
+                    </a>
+                </li>
+                </ul>
+                <p class="inspiArt">Navigation, Nature, Culture</p>
+                <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+                    tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+                    ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim
+                    est
+                    eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
+                    consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras
+                    vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
+                    dui
+                    ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                    cubilia
+                    Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
+                    sodales hendrerit.</p>
+                <a class="lienvoirarticle" href="articleCroatie.html">Voir l'article</a>
             </div>
-            <div class="row col-md-12">
-                <img src="asset/photos/japon.jpg" alt="photoArt4" class="photoResArt col-md-4">
-                <div class="col-md-8">
-                    <h2 class="titleArt">Le Japon en train magnétique</h2>
-                    <p class="inspiArt">Rencontres, Gastronime, Culture</p>
-                    <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras
-                        elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin
-                        porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet
-                        erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
-                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum
-                        augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut
-                        augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas
-                        adipiscing ante non diam sodales hendrerit.</p>
-                </div>
+        </div>
+        <div class="row col-lg-12">
+            <img src="asset/photos/ajapon.jpg" alt="photoArt4" class="photoResArt col-lg-4">
+            <div class="col-lg-8">
+                <h2 class="titleArt">Le Japon en train magnétique</h2>
+                <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left"></ul>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-in mx-1" href="inspiRencontres.html">
+                        Rencontres
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" href="inspiGastronomie.html">
+                        Gastronomie
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="inspiCulture.html">
+                        Culture
+                    </a>
+                </li>
+    
+                </ul>
+                <p class="inspiArt">Rencontres, Gastronomie, Culture</p>
+                <p class="txtArt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+                    tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+                    ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim
+                    est
+                    eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
+                    consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras
+                    vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
+                    dui
+                    ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                    cubilia
+                    Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
+                    sodales hendrerit.</p>
+                <a class="lienvoirarticle" href="articleJapon.html">Voir l'article</a>
             </div>
-        </section>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="page-footer font-small pt-4">
-        <!-- Footer Elements -->
-        <div class="row">
-            <div class="container col-md-6">
-                <!--Grid column-->
-                <div class="text-right">
-                    <h6 class="mb-0 white-text">Envie de voyager ? Suivez-nous !</h6>
-                </div>
+   <!-- Footer -->
+<footer class="page-footer font-small pt-4 col-12">
+    <!-- Footer Elements -->
+    <div class="row">
+        <div class="container col-6">
+            <!--Grid column-->
+            <div class="text-right">
+                <h6 class="mb-0 white-text">Envie de voyager ? Suivez-nous !</h6>
             </div>
-
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-left col-md-6">
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/" target="_blank">
-                        <i class="fab fa-facebook-f"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/" target="_blank">
-                        <i class="fab fa-twitter"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-in mx-1" href="https://www.instagram.com/" target="_blank">
-                        <i class="fab fa-instagram"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-pi mx-1" href="https://www.pinterest.fr/" target="_blank">
-                        <i class="fab fa-pinterest"> </i>
-                    </a>
-                </li>
-            </ul>
-            <!-- Social buttons -->
         </div>
-        </div>
-        <!-- Footer Elements -->
 
-    </footer>
-    <!-- Footer -->
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-left col-6">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1" href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-in mx-1" href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-pi mx-1" href="https://www.pinterest.fr/" target="_blank">
+                    <i class="fab fa-pinterest"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+    </div>
+    </div>
+    <!-- Footer Elements -->
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            // Affichage du sous menu en douceur
-            jQuery('ul.nav li.dropdown').hover(function () {
-                jQuery(this).find('.jqueryFadeIn').stop(true, true).delay(200).fadeIn();
-            }, function () {
-                jQuery(this).find('.jqueryFadeIn').stop(true, true).delay(200).fadeOut();
-            });
+</footer>
+<!-- Footer -->
+</div>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        // Affichage du sous menu en douceur
+        jQuery('ul.nav li.dropdown').hover(function () {
+            jQuery(this).find('.jqueryFadeIn').stop(true, true).delay(200).fadeIn();
+        }, function () {
+            jQuery(this).find('.jqueryFadeIn').stop(true, true).delay(200).fadeOut();
+        });
 
-        });		
-    </script>
-    <script src="essai.js"></script>
+    });
+
+</script>
+<script src="essai.js"></script>
 </body>
 
 </html>
