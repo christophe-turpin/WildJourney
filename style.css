@@ -141,6 +141,15 @@ body::after{
 
 /*articles*/
  
+#inspiList a{
+    color: brown;
+    font-weight: bold;
+}
+
+#inspiList a:hover{
+    color: rgb(196, 145, 79);
+}
+
 #enteteArticle {
     display: inline-flex;
     flex-flow: row nowrap;
@@ -148,8 +157,8 @@ body::after{
 .titleArt{
     font-size: 20px;
     font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 85px;
+    margin-bottom: 30px;
     }
 
 .txtArt{
@@ -179,13 +188,23 @@ th {
 
 .lienvoirarticle {
     font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+}
+
+.lienvoirarticle a:hover{
+    color: black;
 }
 
 .photoResArt{
     margin-bottom: 50px;
-    margin-top: 10px;
+    margin-top: 120px;
     height: 300px; 
 }
+
+
+
 
 /*presentation*/
 #presTitle{
@@ -206,10 +225,19 @@ em{
     background-color: rgba(255,255,255,0.5);
     height: fit-content;
    }
+
 #photPres{
     margin: 8px;
     margin-top: 40px;
     padding-right: 30px;
+    -webkit-transition: .3s ease-in-out !important; 
+  transition: .3s ease-in-out !important; 
+}
+
+#photPres:hover{
+    width: 280px;
+    height: 250px;
+    border-radius: 50%; 
 }
 
 #presTitle{
