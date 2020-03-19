@@ -108,7 +108,7 @@ body::after{
     background-image: url("asset/photos/fond.jpg");
     opacity: 0.2;
     position: absolute;
-    background-size: 250% ;
+    background-size: cover;
     background-repeat: space;
     background-position: bottom;
     top: 0;
@@ -117,7 +117,6 @@ body::after{
     right: 0;
     z-index: -1;
 }
-
 
 
 .active {
@@ -140,12 +139,27 @@ body::after{
 }
 
 /*articles*/
-    
+ 
+#enteteArticle {
+    display: inline-flex;
+    flex-flow: row nowrap;
+}
 .titleArt{
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
     }
+
+#titleInspi {
+    margin-left: 40px;
+}
+
+#titlePeriod {
+    margin-left: 65px; 
+    padding-left: 0px;
+}
 
 .txtArt{
     text-align: justify;
