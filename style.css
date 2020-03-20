@@ -32,6 +32,9 @@ body {
 #paddingnav {
   background-color: #f1f1f1;
   padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  z-index:3;
 }
 
 #paddingnav a {
@@ -56,11 +59,18 @@ body {
     display: flex;
     justify-content: stretch;
     align-items: center;
+    
 }
 
 li{
     list-style-type: none;
 }
+
+/* nav{
+    position: fixed;
+    top: 0;
+    z-index:3;
+} */
 
 .color {
     color: white;
@@ -97,9 +107,6 @@ li .active{
 
 .span{
     margin-left: 20px;
-}
-/*position detail arborescence */
-#position{ margin-left: 20px;
 }
 
 /*background*/
@@ -255,12 +262,17 @@ footer {
         display: none;
     }
 
+    .photosMedia{
+        display: none;
+    }
+
     .sidenav{
         display: none;
     }
 }
 
 @media screen and (max-width: 961px) {
+
     .openbtn {
         font-size: 20px;
         cursor: pointer;
@@ -270,10 +282,16 @@ footer {
         border: none;
     }
 
+    header {
+        position: fixed;
+        top: 0;
+        z-index:3;
+    }
+
     .openbtn:hover {
     background-color: rgb(0, 25, 50);
     }  
-
+    
     .sidenav {
     height: 100%;
     width: 0;
@@ -344,6 +362,54 @@ footer {
         justify-content: center;
     }
 
+    .photosMedia{
+        display: flex; 
+        justify-content: space-around;   
+    }
+    .galleriePhoto{
+        width: 30%;
+    }
+    /* test modal*/
+    .modal-trigger {
+        cursor: pointer;
+        display: inline-block;
+      }
+      
+    .photosMedia[open] > .modal-trigger::before {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        cursor: default;
+        content: '';
+        z-index: 99;
+        
+        }
+      
+    .galleriePhotoGrande {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        font-size: 4em;
+        animation-name: fadein;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        border: 1px solid #d1d5da;
+        border-radius: 3px;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+      }
+      
+      @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+      
+    .modal-trigger::-webkit-details-marker {
+        display:none;
+      }
 }
 
 @media screen and (max-height: 450px) {
@@ -355,3 +421,4 @@ footer {
         font-size: 18px;
     }
 }
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head class="row">
   <meta charset="UTF-8">
   <link href="style.css" rel="stylesheet">
   <link href="bootstrap.css" rel="stylesheet">
@@ -17,208 +17,210 @@
 </head>
 
 <body>
-  <nav id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <button class="dropdown-btn">Destinations<i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-      <button class="dropdown-btn">Amérique du Sud<i class="fa fa-caret-down"></i></button>
+  <header>
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <button class="dropdown-btn">Destinations<i class="fa fa-caret-down"></i>
+      </button>
       <div class="dropdown-container">
-        <a href="destinationAmazonie.html">Amazonie</a>
+        <button class="dropdown-btn">Amérique du Sud<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+          <a href="destinationAmazonie.html">Amazonie</a>
+        </div>
+        <button class="dropdown-btn">Asie<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+          <a href="destinationBali.html">Bali</a>
+          <a href="destinationJapon.html">Japon</a>
+        </div>
+        <button class="dropdown-btn">Europe<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+          <a href="destinationCroatie.html">Croatie</a>
+        </div>
       </div>
-      <button class="dropdown-btn">Asie<i class="fa fa-caret-down"></i></button>
+      <button class="dropdown-btn">Inspirations<i class="fa fa-caret-down"></i>
+      </button>
       <div class="dropdown-container">
-        <a href="destinationBali.html">Bali</a>
-        <a href="destinationJapon.html">Japon</a>
+        <a href="inspiCulture.html">Culture</a>
+        <a href="inspiGastronomie.html">Gastronomie</a>
+        <a href="inspiNature.html">Nature</a>
+        <a href="inspiNavigation.html">Navigation</a>
+        <a href="inspiRencontres.html">Rencontres</a>
+        <a href="inspiSport.html">Sport</a>
       </div>
-      <button class="dropdown-btn">Europe<i class="fa fa-caret-down"></i></button>
+      <button class="dropdown-btn">Quand partir ?<i class="fa fa-caret-down"></i>
+      </button>
       <div class="dropdown-container">
-        <a href="destinationCroatie.html">Croatie</a>
+        <a onclick="pasDeVoyage()">Janvier</a>
+        <a onclick="pasDeVoyage()">Février</a>
+        <a onclick="pasDeVoyage()">Mars</a>
+        <a href="avril.html">Avril</a>
+        <a href="mai.html">Mai</a>
+        <a href="juin.html">Juin</a>
+        <a href="juillet.html">Juillet</a>
+        <a href="aout.html">Août</a>
+        <a href="septembre.html">Septembre</a>
+        <a href="octobre.html">Octobre</a>
+        <a onclick="pasDeVoyage()">Novembre</a>
+        <a onclick="pasDeVoyage()">Décembre</a>
       </div>
-    </div>
-    <button class="dropdown-btn">Inspirations<i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-      <a href="inspiCulture.html">Culture</a>
-      <a href="inspiGastronomie.html">Gastronomie</a>
-      <a href="inspiNature.html">Nature</a>
-      <a href="inspiNavigation.html">Navigation</a>
-      <a href="inspiRencontres.html">Rencontres</a>
-      <a href="inspiSport.html">Sport</a>
-    </div>
-    <button class="dropdown-btn">Quand partir ?<i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-      <a onclick="pasDeVoyage()">Janvier</a>
-      <a onclick="pasDeVoyage()">Février</a>
-      <a onclick="pasDeVoyage()">Mars</a>
-      <a href="avril.html">Avril</a>
-      <a href="mai.html">Mai</a>
-      <a href="juin.html">Juin</a>
-      <a href="juillet.html">Juillet</a>
-      <a href="aout.html">Août</a>
-      <a href="septembre.html">Septembre</a>
-      <a href="octobre.html">Octobre</a>
-      <a onclick="pasDeVoyage()">Novembre</a>
-      <a onclick="pasDeVoyage()">Décembre</a>
-    </div>
-    <input id="mobileSearch" type="search" href="#contact" placeholder="Recherche"></input>
-  </nav>
-  <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-12">
-    <button class="openbtn col-sm-2 col-xs-2" onclick="openNav()">☰</button>
-    <div class="collapse navbar-collapse col-md-12 col-sm-10 col-xs-9" id="navbarSupportedContent">
-      <li id="ligo" class="nav-item col-md-3 col-sm-4 col-xs-8 active text-center">
-        <a class="" href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
-      </li>
-      <ul id="navbarList" class="nav navbar-nav col-md-10 col-sm-1">  
-        <li class="dropdown col-md-3 text-left">
-          <a class='color' data-toggle="dropdown" href="#">
-            Destinations<b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu jqueryFadeIn">
-            <li class="dropdown-submenu">
-              <a data-toggle="dropdown" tabindex="-1" href="#">Amérique du Sud &nbsp&nbsp&nbsp&#10148</a>
-              <ul class="dropdown-menu">
-                <li><a href="destinationAmazonie.html">Amazonie</a></li>
-              </ul>
-            </li>
-            <li class="dropdown-submenu">
-              <a data-toggle="dropdown" tabindex="-1" href="#">Asie
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &#10148</a>
-              <ul class="dropdown-menu">
-                <li><a href="destinationBali.html">Bali</a></li>
-                <li><a href="destinationJapon.html">Japon</a></li>
-              </ul>
-            </li>
-            <li class="dropdown-submenu">
-              <a data-toggle="dropdown" tabindex="-1" href="#">Europe
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#10148</a>
-              <ul class="dropdown-menu">
-                <li><a href="destinationCroatie.html">Croatie</a></li>
-              </ul>
-            </li>
-          </ul>
-        <li class="dropdown col-md-3 text-left">
-          <a class='color' data-toggle="dropdown" href="#">
-            Inspirations<b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu jqueryFadeIn">
-            <li class="dropdown-submenu text-center">
-              <a href="inspiCulture.html">Culture</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="inspiGastronomie.html">Gastronomie</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="inspiNature.html">Nature</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="inspiNavigation.html">Navigation</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="inspiRencontres.html">Rencontres</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="inspiSport.html">Sport</a>
-            </li>
-          </ul>
+      <input id="mobileSearch" type="search" href="#contact" placeholder="Recherche"></input>
+    </nav>
+    <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-12">
+      <button class="openbtn col-sm-2 col-xs-2" onclick="openNav()">☰</button>
+      <div class="collapse navbar-collapse col-md-12 col-sm-10 col-xs-9" id="navbarSupportedContent">
+        <li id="ligo" class="nav-item col-md-3 col-sm-4 col-xs-8 active text-center">
+          <a class="" href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
         </li>
-        <li class="dropdown col-md-3 text-left">
-          <a class='color' class="nav-link " href="#">Quand partir ?<b class="caret"></b></a>
-          <ul class="dropdown-menu jqueryFadeIn">
-            <li class="dropdown-submenu text-center">
-              <a href="#" onclick="pasDeVoyage()">Janvier</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="#" onclick="pasDeVoyage()">Fevrier</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="#" onclick="pasDeVoyage()">Mars</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="avril.html">Avril</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="mai.html">Mai</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="juin.html">Juin</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="juillet.html">Juillet</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="aout.html">Août</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="septembre.html">Septembre</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="octobre.html">Octobre</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="#" onclick="pasDeVoyage()">Novembre</a>
-            </li>
-            <li class="dropdown-submenu text-center">
-              <a href="#" onclick="pasDeVoyage()">Décembre</a>
-            </li>
-          </ul>
-        </li>
-      <form class="form-inline col-md-3">
-        <input class="searchbar form-control col-md-7" list="ccList" type="search" placeholder="Recherche" aria-label="Search">
-        <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
-        <!-- ordered list -->
-          <datalist id='ccList' naclass="dropdown-menu" data-toggle="dropdown">
-            <option value="L'amazonie en pirogue">
-              <a onclick="changePage()" href="articleAmazonie.html"></a>L'amazonie en pirogue</option>
-            <option value="Destination Amérique du Sud Amazonie">
-              <a href="destinationAmazonie.html"></a>Destination Amérique du Sud Amazonie</option>
-            <option value="Bali en VTC">
-              <a href="articleBali.html"></a>Bali en VTC</option>
-            <option value="Destination Asie Bali">
-              <a href="destinationBali.html"></a>Destination Asie Bali</option>
-            <option value="Le Japon en train magnétique">
-              <a href="articleJapon.html"></a>Le Japon en train magnétique</option>
-            <option value="Destination Asie Japon">
-              <a href="destinationJapon.html"></a>Destination Asie Japon</option>
-            <option value="La croatie en catamaran">
-              <a href="articleCroatie.html"></a>La Croatie en catamaran</option>
-            <option value="Destination Europe Croatie">
-              <a href="destinationCroatie.html"></a>Destination Europe Croatie</option>
-            <option value="Inspirations Culture">
-              <a href="inspiCulture.html"></a>Inspirations Culture</option>
-            <option value="Inspirations Gastronomie">
-              <a href="inspiGastronomie.html"></a>Inspirations Gastronomie</option>
-            <option value="Inspirations Nature">
-              <a href="inspiNature.html"></a>Inspirations Nature</option>
-            <option value="Inspirations Navigation">
-              <a href="inspiNavigation.html"></a>Inspirations Navigation</option>
-            <option value="Inspirations Rencontres">
-              <a href="inspiRencontres.html"></a>Inspirations Rencontres</option>
-            <option value="Inspirations Sport">
-              <a href="inspiSport.html"></a>Inspirations Sport</option>
-            <option value="Avril">
-              <a href="avril.html"></a>Avril</option>
-            <option value="Mai">
-              <a href="mai.html"></a>Mai</option>
-            <option value="Juin">
-              <a href="juin.html"></a>Juin</option>
-            <option value="Juillet">
-              <a href="juillet.html"></a>Juillet</option>
-            <option value="Août">
-              <a href="aout.html"></a>Août</option>
-            <option value="Septembre">
-              <a href="septembre.html"></a>Septembre</option>
-            <option value="Octobre">
-              <a href="octobre.html"></a>Octobre</option>
-            </datalist>
-        
-        <!-- linking javscript -->
-      </form>
-      </ul>
-    </div>
-  </nav>
+        <ul id="navbarList" class="nav navbar-nav col-md-10 col-sm-1">  
+          <li class="dropdown col-md-3 text-left">
+            <a class='color' data-toggle="dropdown" href="#">
+              Destinations<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu jqueryFadeIn">
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Amérique du Sud &nbsp&nbsp&nbsp&#10148</a>
+                <ul class="dropdown-menu">
+                  <li><a href="destinationAmazonie.html">Amazonie</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Asie
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  &#10148</a>
+                <ul class="dropdown-menu">
+                  <li><a href="destinationBali.html">Bali</a></li>
+                  <li><a href="destinationJapon.html">Japon</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a data-toggle="dropdown" tabindex="-1" href="#">Europe
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#10148</a>
+                <ul class="dropdown-menu">
+                  <li><a href="destinationCroatie.html">Croatie</a></li>
+                </ul>
+              </li>
+            </ul>
+          <li class="dropdown col-md-3 text-left">
+            <a class='color' data-toggle="dropdown" href="#">
+              Inspirations<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu jqueryFadeIn">
+              <li class="dropdown-submenu text-center">
+                <a href="inspiCulture.html">Culture</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiGastronomie.html">Gastronomie</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiNature.html">Nature</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiNavigation.html">Navigation</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiRencontres.html">Rencontres</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="inspiSport.html">Sport</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown col-md-3 text-left">
+            <a class='color' class="nav-link " href="#">Quand partir ?<b class="caret"></b></a>
+            <ul class="dropdown-menu jqueryFadeIn">
+              <li class="dropdown-submenu text-center">
+                <a href="#" onclick="pasDeVoyage()">Janvier</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="#" onclick="pasDeVoyage()">Fevrier</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="#" onclick="pasDeVoyage()">Mars</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="avril.html">Avril</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="mai.html">Mai</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="juin.html">Juin</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="juillet.html">Juillet</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="aout.html">Août</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="septembre.html">Septembre</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="octobre.html">Octobre</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="#" onclick="pasDeVoyage()">Novembre</a>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a href="#" onclick="pasDeVoyage()">Décembre</a>
+              </li>
+            </ul>
+          </li>
+        <form class="form-inline col-md-3">
+          <input class="searchbar form-control col-md-7" list="ccList" type="search" placeholder="Recherche" aria-label="Search">
+          <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
+          <!-- ordered list -->
+            <datalist id='ccList' naclass="dropdown-menu" data-toggle="dropdown">
+              <option value="L'amazonie en pirogue">
+                <a onclick="changePage()" href="articleAmazonie.html"></a>L'amazonie en pirogue</option>
+              <option value="Destination Amérique du Sud Amazonie">
+                <a href="destinationAmazonie.html"></a>Destination Amérique du Sud Amazonie</option>
+              <option value="Bali en VTC">
+                <a href="articleBali.html"></a>Bali en VTC</option>
+              <option value="Destination Asie Bali">
+                <a href="destinationBali.html"></a>Destination Asie Bali</option>
+              <option value="Le Japon en train magnétique">
+                <a href="articleJapon.html"></a>Le Japon en train magnétique</option>
+              <option value="Destination Asie Japon">
+                <a href="destinationJapon.html"></a>Destination Asie Japon</option>
+              <option value="La croatie en catamaran">
+                <a href="articleCroatie.html"></a>La Croatie en catamaran</option>
+              <option value="Destination Europe Croatie">
+                <a href="destinationCroatie.html"></a>Destination Europe Croatie</option>
+              <option value="Inspirations Culture">
+                <a href="inspiCulture.html"></a>Inspirations Culture</option>
+              <option value="Inspirations Gastronomie">
+                <a href="inspiGastronomie.html"></a>Inspirations Gastronomie</option>
+              <option value="Inspirations Nature">
+                <a href="inspiNature.html"></a>Inspirations Nature</option>
+              <option value="Inspirations Navigation">
+                <a href="inspiNavigation.html"></a>Inspirations Navigation</option>
+              <option value="Inspirations Rencontres">
+                <a href="inspiRencontres.html"></a>Inspirations Rencontres</option>
+              <option value="Inspirations Sport">
+                <a href="inspiSport.html"></a>Inspirations Sport</option>
+              <option value="Avril">
+                <a href="avril.html"></a>Avril</option>
+              <option value="Mai">
+                <a href="mai.html"></a>Mai</option>
+              <option value="Juin">
+                <a href="juin.html"></a>Juin</option>
+              <option value="Juillet">
+                <a href="juillet.html"></a>Juillet</option>
+              <option value="Août">
+                <a href="aout.html"></a>Août</option>
+              <option value="Septembre">
+                <a href="septembre.html"></a>Septembre</option>
+              <option value="Octobre">
+                <a href="octobre.html"></a>Octobre</option>
+              </datalist>
+          
+          <!-- linking javscript -->
+        </form>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -263,6 +265,7 @@
     </a>
     </a>
   </div>
+  
   <section class="filActualites row col-lg-12">
     <section class="listArt row col-lg-9 col-md-11 col-sm-12 text-center">
       <div class="liste row col-lg-12">
