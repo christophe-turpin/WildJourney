@@ -91,7 +91,7 @@ li{
     height: 70px;
 }
 
-.searchbar {
+#search #mobileSearch {
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
