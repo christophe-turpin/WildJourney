@@ -6,6 +6,14 @@
     url("Sen/Sen-Regular.ttf") format("ttf");
 }
 
+:root{
+    --listDisplay: none
+}
+
+[data-theme='search']{
+    --listDisplay: ''
+}
+
 .row{
     margin: 0;
     padding: 0;
@@ -83,7 +91,38 @@ li{
     height: 70px;
 }
 
+.searchbar {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
 
+#ccList {
+  display: var(--listDisplay);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#ccList li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#ccList li a:hover:not(.header) {
+  background-color: #eee;
+}
 /*navbar + caroussel*/
 #paddingnav, #carouselExampleCaptions{
     padding: 0;
@@ -151,12 +190,19 @@ body::after{
     padding-right: 8px;
 }
 
+.fa-caret-right {
+    float: right;
+    padding-right: 8px;
+}
+
 /*articles*/
  
-#enteteArticle {
+.enteteArticle {
     display: inline-flex;
     flex-flow: row nowrap;
+    align-items: baseline;
 }
+
 .titleArt{
     font-size: 20px;
     font-weight: bold;
@@ -194,9 +240,16 @@ th {
     width: 80%;
 }
 
-.inspiArt{
+#inspiArt{
     font-size: 1em;
     font-weight: bold;
+    align-self: baseline;
+}
+
+#periodArt{
+    font-size: 1em;
+    font-weight: bold;
+    align-self: center;
 }
 
 .lienvoirarticle {
@@ -282,11 +335,6 @@ footer {
         border: none;
     }
 
-    header {
-        position: fixed;
-        top: 0;
-        z-index:3;
-    }
 
     .openbtn:hover {
     background-color: rgb(0, 25, 50);
