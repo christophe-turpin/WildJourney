@@ -51,10 +51,8 @@ function myFunction() {
     ul = document.getElementById("ccList");
     li = ul.getElementsByTagName("li");
         if (txtValue.toUpperCase().indexOf(filter) > 0) {
-            document.documentElement.setAttribute('data-theme', 'search');
             li[i].style.display = "";
         } else {
-            document.documentElement.setAttribute('data-theme', 'nosearch');
             li[i].style.display = "none";
         }
     }
