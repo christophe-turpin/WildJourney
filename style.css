@@ -6,14 +6,6 @@
     url("Sen/Sen-Regular.ttf") format("ttf");
 }
 
-:root{
-    --listDisplay: none
-}
-
-[data-theme='search']{
-    --listDisplay: ''
-}
-
 .row{
     margin: 0;
     padding: 0;
@@ -91,7 +83,7 @@ li{
     height: 70px;
 }
 
-.searchbar {
+#search #mobileSearch {
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
@@ -101,11 +93,17 @@ li{
   margin-bottom: 12px;
 }
 
+#parList{
+    display: flex;
+}
+
 #ccList {
-  display: var(--listDisplay);
+  z-index: inherit;
+  display: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: 70px;
 }
 
 #ccList li a {
@@ -196,7 +194,16 @@ body::after{
 
 /*articles*/
  
-.enteteArticle {
+#inspiList a{
+    color: rgb(0, 0, 50);
+    font-weight: bold;
+}
+
+#inspiList a:hover{
+    color: brown;
+}
+
+#enteteArticle {
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: baseline;
@@ -205,9 +212,8 @@ body::after{
 .titleArt{
     font-size: 20px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 85px;
     margin-bottom: 30px;
-    margin-left: 40px;
     }
 
 #titleInspi {
@@ -253,13 +259,23 @@ th {
 
 .lienvoirarticle {
     font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(0, 0, 50);
+}
+
+.lienvoirarticle a:hover{
+    color: brown;
 }
 
 .photoResArt{
     margin-bottom: 50px;
-    margin-top: 10px;
+    margin-top: 120px;
     height: 300px; 
 }
+
+
+
 
 /*presentation*/
 #presTitle{
@@ -290,6 +306,14 @@ em{
     margin: 8px;
     margin-top: 40px;
     padding-right: 30px;
+    -webkit-transition: .3s ease-in-out !important; 
+  transition: .3s ease-in-out !important; 
+}
+
+#photPres:hover{
+    width: 280px;
+    height: 250px;
+    border-radius: 50%; 
 }
 
 #presTitle{
