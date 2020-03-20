@@ -37,22 +37,21 @@ for (i = 0; i < dropdown.length; i++) {
 //     window.location = $("a").attr("href")
 // };
 
-function switchTheme(event) {
-    if (event.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'ac');
-    }
-   
-}
 
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementsByClassName("searchbar");
+    input = document.getElementById("search");
     filter = input.value.toUpperCase();
     ul = document.getElementById("ccList");
     li = ul.getElementsByTagName("li");
-        if (txtValue.toUpperCase().indexOf(filter) > 0) {
+    ul.style.display = "flex";
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+        li[i].style.display = "none";
         }
     }
+}
