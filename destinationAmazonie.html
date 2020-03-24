@@ -67,7 +67,7 @@
             <a onclick="pasDeVoyage()">Novembre</a>
             <a onclick="pasDeVoyage()">Décembre</a>
         </div>
-        <input id="mobileSearch" type="search" href="#contact" placeholder="Recherche"></input>
+        <input id="mobileSearch" list='ccList' onchange="mobile_link()" type="search" href="#contact" placeholder="Recherche"></input>
     </nav>
     <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-12">
         <button class="openbtn col-sm-2 col-xs-2" onclick="openNav()">☰</button>
@@ -171,8 +171,32 @@
                     </ul>
                 </li>
                 <form class="form-inline col-md-3">
-                    <input class="form-control col-md-7" type="search" placeholder="Recherche" aria-label="Search">
-                    <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
+                <input class="searchbar form-control col-md-7" onchange="catch_link()" list="ccList" type="search" id="search"
+                    placeholder="Recherche" aria-label="Search">
+                <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
+                <datalist id='ccList' class="col-2">
+                    <option value="L'amazonie en pirogue">L'amazonie en pirogue</option>
+                    <option value="Destination Amérique du Sud Amazonie">Destination Amérique du Sud Amazonie</option>
+                    <option value="Bali en VTC">Bali en VTC</option>
+                    <option value="Destination Asie Bali">Destination Asie Bali</option>
+                    <option value="Le Japon en train magnétique">Le Japon en train magnétique</option>
+                    <option value="Destination Asie Japon">Destination Asie Japon</option>
+                    <option value="La Croatie en catamaran">La Croatie en catamaran</option>
+                    <option value="Destination Europe Croatie">Destination Europe Croatie</option>
+                    <option value="Inspirations Culture">Inspirations Culture</option>
+                    <option value="Inspirations Gastronomie">Inspirations Gastronomie</option>
+                    <option value="Inspirations Nature">Inspirations Nature</option>
+                    <option value="Inspirations Navigation">Inspirations Navigation</option>
+                    <option value="Inspirations Rencontres">Inspirations Rencontres</option>
+                    <option value="Inspirations Sport">Inspirations Sport</option>
+                    <option value="Avril">Avril</option>
+                    <option value="Mai">Mai</option>
+                    <option value="Juin">Juin</option>
+                    <option value="Juillet">Juillet</option>
+                    <option value="Août">Août</option>
+                    <option value="Septembre">Septembre</option>
+                    <option value="Octobre">Octobre</option>
+                </datalist>
                 </form>
             </ul>
         </div>

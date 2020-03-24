@@ -200,7 +200,7 @@ body::after{
 }
 
 #inspiList a:hover{
-    color: brown;
+    color: blue;
 }
 
 #enteteArticle {
@@ -264,9 +264,6 @@ th {
     color: rgb(0, 0, 50);
 }
 
-.lienvoirarticle a:hover{
-    color: brown;
-}
 
 .photoResArt{
     margin-bottom: 50px;
