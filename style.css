@@ -1,4 +1,7 @@
-
+@viewport {
+   width: device-width; /* largeur du viewport */
+   zoom: 1; /* zoom initial à 1.0 (et clin d'oeil aux fans d'IE6/7) */
+}
 /*police*/
 @font-face {
     font-family: "Sen";
@@ -328,14 +331,18 @@ footer {
     margin-top: 70px;
 }
 
-
+#corpus {
+        margin-top: 150px;
+    }
 
 @media screen and (min-width: 961px) {
     .openbtn {
         display: none;
     }
 
-    
+    #corpus {
+        margin-top: 50px;
+    }
 
     .photosMedia{
         display: none;
@@ -483,6 +490,7 @@ footer {
 }
 
 @media screen and (max-height: 450px) {
+    
     .sidenav {
         padding-top: 15px;
     }
@@ -490,5 +498,9 @@ footer {
     .sidenav a {
         font-size: 18px;
     }
+}
+
+@media screen and (max-height: 500px) {
+    
 }
 
