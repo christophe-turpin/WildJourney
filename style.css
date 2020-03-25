@@ -461,10 +461,12 @@ footer {
         border-radius: 50%; 
     }   
 
+
     .filActualites {
         display: flex;
         flex-flow: column-reverse nowrap;
         align-items: center;
+        margin-top: 100px;
     }
 
     .page-footer{
@@ -533,7 +535,5 @@ footer {
     }
 }
 
-@media screen and (max-height: 500px) {
-    
-}
+
 
