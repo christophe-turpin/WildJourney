@@ -224,9 +224,9 @@ body::after{
 }
 
 #enteteArticle {
-    display: inline-flex;
+    display: flex;
     flex-flow: row nowrap;
-    align-items: baseline;
+    
 }
 
 .titleArt{
@@ -234,7 +234,8 @@ body::after{
     font-weight: bold;
     margin-top: 120px;
     margin-bottom: 30px;
-    }
+    margin-left: 26px;
+}
 
 #titleInspi {
     margin-left: 40px;
@@ -265,16 +266,19 @@ th {
     width: 80%;
 }
 
+
 #inspiArt{
     font-size: 1em;
     font-weight: bold;
-    align-self: baseline;
+    margin-left: 25px;
 }
 
 #periodArt{
     font-size: 1em;
     font-weight: bold;
     align-self: center;
+    margin-left: 40px; 
+    padding-left: 0px;
 }
 
 .lienvoirarticle {
