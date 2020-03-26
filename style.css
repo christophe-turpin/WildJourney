@@ -198,6 +198,10 @@ body::after{
     padding-top: 16px;
 }
 
+.carousel-indicators li{
+    display: none;
+}
+
 /*articles*/
  
 #inspiList a{
