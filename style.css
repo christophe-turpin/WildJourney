@@ -10,12 +10,6 @@
     margin: 0;
     padding: 0;
 }
-
-.filActualites{
-    margin: 0;
-    padding: 0;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -32,9 +26,6 @@ body {
 #paddingnav {
   background-color: #f1f1f1;
   padding: 20px 10px;
-  position: fixed;
-  top: 0;
-  z-index:3;
 }
 
 #paddingnav a {
@@ -59,18 +50,11 @@ body {
     display: flex;
     justify-content: stretch;
     align-items: center;
-    
 }
 
 li{
     list-style-type: none;
 }
-
-/* nav{
-    position: fixed;
-    top: 0;
-    z-index:3;
-} */
 
 .color {
     color: white;
@@ -83,43 +67,7 @@ li{
     height: 70px;
 }
 
-#search #mobileSearch {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
 
-#parList{
-    display: flex;
-}
-
-#ccList {
-  z-index: inherit;
-  display: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 70px;
-}
-
-#ccList li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#ccList li a:hover:not(.header) {
-  background-color: #eee;
-}
 /*navbar + caroussel*/
 #paddingnav, #carouselExampleCaptions{
     padding: 0;
@@ -143,6 +91,9 @@ li .active{
 
 .span{
     margin-left: 20px;
+}
+/*position detail arborescence */
+#position{ margin-left: 20px;
 }
 
 /*background*/
@@ -168,6 +119,7 @@ body::after{
 }
 
 
+
 .active {
     background-color: rgb(0, 0, 50);
     color: gray;
@@ -187,43 +139,27 @@ body::after{
     padding-right: 8px;
 }
 
-.fa-caret-right {
-    float: right;
-    padding-right: 8px;
-}
-
 /*articles*/
  
 #inspiList a{
-    color: rgb(0, 0, 50);
+    color: brown;
     font-weight: bold;
 }
 
 #inspiList a:hover{
-    color: blue;
+    color: rgb(196, 145, 79);
 }
 
 #enteteArticle {
     display: inline-flex;
     flex-flow: row nowrap;
-    align-items: baseline;
 }
-
 .titleArt{
     font-size: 20px;
     font-weight: bold;
     margin-top: 85px;
     margin-bottom: 30px;
     }
-
-#titleInspi {
-    margin-left: 40px;
-}
-
-#titlePeriod {
-    margin-left: 40px; 
-    padding-left: 0px;
-}
 
 .txtArt{
     text-align: justify;
@@ -245,25 +181,21 @@ th {
     width: 80%;
 }
 
-#inspiArt{
+.inspiArt{
     font-size: 1em;
     font-weight: bold;
-    align-self: baseline;
-}
-
-#periodArt{
-    font-size: 1em;
-    font-weight: bold;
-    align-self: center;
 }
 
 .lienvoirarticle {
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
-    color: rgb(0, 0, 50);
+    color: brown;
 }
 
+.lienvoirarticle a:hover{
+    color: black;
+}
 
 .photoResArt{
     margin-bottom: 50px;
@@ -289,16 +221,11 @@ em{
     font-size: 1.2em;
    }
 
-.filActualites {
-    display: flex;
-    justify-content: space-around;
-}
-
 #presentation{
     background-color: rgba(255,255,255,0.5);
-    height: fit-content;    
+    height: fit-content;
    }
-   
+
 #photPres{
     margin: 8px;
     margin-top: 40px;
@@ -331,13 +258,11 @@ footer {
 
 
 @media screen and (min-width: 961px) {
-    .openbtn {
+    .galleryphotos{
         display: none;
     }
 
-    
-
-    .photosMedia{
+    .openbtn {
         display: none;
     }
 
@@ -347,7 +272,6 @@ footer {
 }
 
 @media screen and (max-width: 961px) {
-
     .openbtn {
         font-size: 20px;
         cursor: pointer;
@@ -357,11 +281,10 @@ footer {
         border: none;
     }
 
-
     .openbtn:hover {
     background-color: rgb(0, 25, 50);
     }  
-    
+
     .sidenav {
     height: 100%;
     width: 0;
@@ -435,7 +358,7 @@ footer {
     .photoResArt{
         display: none;
     }
-        
+
 }
 
 @media screen and (max-height: 450px) {
@@ -446,5 +369,5 @@ footer {
     .sidenav a {
         font-size: 18px;
     }
-}
 
+    

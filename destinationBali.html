@@ -14,6 +14,11 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
     <title>Wild Voyages</title>
+    
+    <!--Modal-->
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -240,9 +245,36 @@
         </a>
         </a>
     </div>
+    <br>
     <section class="listArt row col-lg-12">
         <div class="row col-lg-12">
             <img src="asset/photos/abali.jpg" alt="photoArt2" class="photoResArt col-lg-4">
+             <!--Test Coquine de Modal !!!-->
+             <div class="galleryphotos w3-row-padding col-12">
+                <div class="galphot w3-container w3-third col-3">
+                    <img src="asset/photos/bali.jpg" style="width:100%;cursor:pointer" 
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+                <div class="galphot w3-container w3-third col-3">
+                  <img src="asset/photos/bali1.jpg" style="width:100%;cursor:pointer" 
+                  onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+                <div class="galphot w3-container w3-third col-3">
+                  <img src="asset/photos/bali2.jpg" style="width:100%;cursor:pointer" 
+                  onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+                <div class="galphot w3-container w3-third col-3">
+                  <img src="asset/photos/bali3.jpg" style="width:100%;cursor:pointer" 
+                  onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+              </div>
+              
+              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img id="img01" style="width:100%">
+                </div>
+              </div>
             <div class="col-lg-8">
                 <h2 class="titleArt">Bali en VTC</h2>
                 <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
@@ -344,8 +376,15 @@
             });
 
         });
-
     </script>
+
+    <script>
+        //script Modal 
+        function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        }
+        </script>
     <script src="essai.js"></script>
     </body>
     
