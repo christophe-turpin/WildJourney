@@ -40,7 +40,7 @@ for (i = 0; i < dropdown.length; i++) {
 function catch_link() {
     var target = document.getElementById("search").value;
     var T_link = ["L'amazonie en pirogue", "articleAmazonie.html", "Destination Amérique du Sud Amazonie", "destinationAmazonie.html", "Bali en VTC", "articleBali.html", "Destination Asie Bali", "destinationBali.html", "Le Japon en train magnétique", "articleJapon.html", "Destination Asie Japon", "destinationJapon.html", "La Croatie en catamaran", "articleCroatie.html", "Destination Europe Croatie", "destinationCroatie.html", "Inspirations Culture", "inspiCulture.html", "Inspirations Gastronomie", "inspiGastronomie.html", "Inspirations Nature", "inspiNature.html", "Inspirations Navigation", "inspiNavigation.html", "Inspirations Rencontres", "inspiRencontres.html", "Inspirations Sport", "inspiSport.html", "Avril", "avril.html", "Mai", "mai.html", "Juin", "juin.html", "Juillet", "juillet.html", "Août", "aout.html", "Septembre", "septembre.html", "Octobre", "octobre.html"];
-    for (var i = 0; i < Object.keys(T_link).length; i = i + 2) {
+    for (let i = 0; i < Object.keys(T_link).length; i = i + 2) {
         if (target == T_link[i]) {
             window.location = T_link[i + 1];
         }
@@ -50,7 +50,7 @@ function catch_link() {
 function mobile_link() {
     var target = document.getElementById("mobileSearch").value;
     var T_link = ["L'amazonie en pirogue", "articleAmazonie.html", "Destination Amérique du Sud Amazonie", "destinationAmazonie.html", "Bali en VTC", "articleBali.html", "Destination Asie Bali", "destinationBali.html", "Le Japon en train magnétique", "articleJapon.html", "Destination Asie Japon", "destinationJapon.html", "La Croatie en catamaran", "articleCroatie.html", "Destination Europe Croatie", "destinationCroatie.html", "Inspirations Culture", "inspiCulture.html", "Inspirations Gastronomie", "inspiGastronomie.html", "Inspirations Nature", "inspiNature.html", "Inspirations Navigation", "inspiNavigation.html", "Inspirations Rencontres", "inspiRencontres.html", "Inspirations Sport", "inspiSport.html", "Avril", "avril.html", "Mai", "mai.html", "Juin", "juin.html", "Juillet", "juillet.html", "Août", "aout.html", "Septembre", "septembre.html", "Octobre", "octobre.html"];
-    for (var i = 0; i < Object.keys(T_link).length; i = i + 2) {
+    for (let i = 0; i < Object.keys(T_link).length; i = i + 2) {
         if (target == T_link[i]) {
             window.location = T_link[i + 1];
         }

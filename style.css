@@ -1,4 +1,7 @@
-
+@viewport {
+   width: device-width; /* largeur du viewport */
+   zoom: 1; /* zoom initial à 1.0 (et clin d'oeil aux fans d'IE6/7) */
+}
 /*police*/
 @font-face {
     font-family: "Sen";
@@ -26,6 +29,9 @@ body {
 #paddingnav {
   background-color: #f1f1f1;
   padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
 }
 
 #paddingnav a {
@@ -147,15 +153,19 @@ body::after{
     padding-top: 16px;
 }
 
+.carousel-indicators li{
+    display: none;
+}
+
 /*articles*/
  
 #inspiList a{
-    color: brown;
+    color: rgb(0, 0, 50);
     font-weight: bold;
 }
 
 #inspiList a:hover{
-    color: rgb(196, 145, 79);
+    color: blue;
 }
 
 .post{
@@ -227,10 +237,17 @@ th {
 }
 
 .lienvoirarticle {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
-    color: brown;
+    color: rgb(0, 0, 50);
+}
+
+.post {
+    margin-right: 3%;
 }
 
 .lienvoirarticle a:hover{
@@ -238,8 +255,7 @@ th {
 }
 
 .photoResArt{
-    margin-bottom: 50px;
-    margin-top: 120px;
+    margin-top: 180px;
     height: 300px; 
 }
 
@@ -295,7 +311,9 @@ footer {
     margin-top: 70px;
 }
 
-
+#corpus {
+        margin-top: 150px;
+    }
 
 @media screen and (min-width: 961px) {
     .galleryphotos{
@@ -303,12 +321,17 @@ footer {
     }
 
     .openbtn {
+    display: none;
+    }
+
+    .photosMedia{
         display: none;
     }
 
     .sidenav{
         display: none;
     }
+
 }
 
 @media screen and (max-width: 961px) {
@@ -324,6 +347,8 @@ footer {
     .openbtn:hover {
     background-color: rgb(0, 25, 50);
     }  
+
+    
 
     .sidenav {
     height: 100%;
@@ -383,6 +408,10 @@ footer {
     #carouselExampleCaptions{
         display: none;
     }
+    
+    .galleryphotos{
+        margin-top: 140px;
+    }
 
     #photPres:hover{
         width: 100%;
@@ -390,10 +419,12 @@ footer {
         border-radius: 50%; 
     }   
 
+
     .filActualites {
         display: flex;
         flex-flow: column-reverse nowrap;
         align-items: center;
+        margin-top: 100px;
     }
 
     .page-footer{
@@ -405,9 +436,13 @@ footer {
         display: none;
     }
 
+    .titleArt{
+        margin-top: 140px;
+    }
 }
 
 @media screen and (max-height: 450px) {
+    
     .sidenav {
         padding-top: 15px;
     }
@@ -415,4 +450,5 @@ footer {
     .sidenav a {
         font-size: 18px;
     }
+
 }    
