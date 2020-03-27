@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -63,14 +63,14 @@
             <a onclick="pasDeVoyage()">Novembre</a>
             <a onclick="pasDeVoyage()">Décembre</a>
         </div>
-        <input id="mobileSearch" list='ccList' onchange="mobile_link()" type="search" href="#contact" placeholder="Recherche"></input>
+        <input id="mobileSearch" list='ccList' onchange="mobile_link()" type="search" placeholder="Recherche">
     </nav>
     <nav id="paddingnav" class="navbar navbar-expand-md navbar-light bg-light row col-12">
         <button class="openbtn col-sm-2 col-xs-2" onclick="openNav()">☰</button>
         <div class="collapse navbar-collapse col-md-12 col-sm-10 col-xs-9" id="navbarSupportedContent">
-            <li id="ligo" class="nav-item col-md-3 col-sm-4 col-xs-8 text-center">
-                <a class="" href="index.html"><img class="logo" src="asset/logos/logo_wild voyages.png" alt="logo"></a>
-            </li>
+            <div id="ligo" class="nav-item col-md-3 col-sm-4 col-xs-8 text-center">
+                <a class="" href="index.html"><img class="logo" src="asset/logos/logo_wildvoyages.png" alt="logo"></a>
+            </div>
             <ul id="navbarList" class="nav navbar-nav col-md-10 col-sm-1">
                 <li class="dropdown col-md-3 text-left">
                     <a class='color' data-toggle="dropdown" href="#">
@@ -123,7 +123,7 @@
                     </ul>
                 </li>
                 <li class="dropdown col-md-3 text-left active">
-                    <a class='color' class="nav-link " href="#">Quand partir ?<b class="caret"></b></a>
+                    <a class="color" href="#">Quand partir ?<b class="caret"></b></a>
                     <ul class="dropdown-menu jqueryFadeIn">
                         <li class="dropdown-submenu text-center">
                             <a href="#" onclick="pasDeVoyage()">Janvier</a>
@@ -163,37 +163,39 @@
                         </li>
                     </ul>
                 </li>
-                <form class="form-inline col-md-3">
-                    <input class="searchbar form-control col-md-7" onchange="catch_link()" list="ccList" type="search" id="search"
-                        placeholder="Recherche" aria-label="Search">
-                    <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
-                    <datalist id='ccList' class="col-2">
-                        <option value="L'amazonie en pirogue">L'amazonie en pirogue</option>
-                        <option value="Destination Amérique du Sud Amazonie">Destination Amérique du Sud Amazonie</option>
-                        <option value="Bali en VTC">Bali en VTC</option>
-                        <option value="Destination Asie Bali">Destination Asie Bali</option>
-                        <option value="Le Japon en train magnétique">Le Japon en train magnétique</option>
-                        <option value="Destination Asie Japon">Destination Asie Japon</option>
-                        <option value="La Croatie en catamaran">La Croatie en catamaran</option>
-                        <option value="Destination Europe Croatie">Destination Europe Croatie</option>
-                        <option value="Inspirations Culture">Inspirations Culture</option>
-                        <option value="Inspirations Gastronomie">Inspirations Gastronomie</option>
-                        <option value="Inspirations Nature">Inspirations Nature</option>
-                        <option value="Inspirations Navigation">Inspirations Navigation</option>
-                        <option value="Inspirations Rencontres">Inspirations Rencontres</option>
-                        <option value="Inspirations Sport">Inspirations Sport</option>
-                        <option value="Avril">Avril</option>
-                        <option value="Mai">Mai</option>
-                        <option value="Juin">Juin</option>
-                        <option value="Juillet">Juillet</option>
-                        <option value="Août">Août</option>
-                        <option value="Septembre">Septembre</option>
-                        <option value="Octobre">Octobre</option>
-                    </datalist>
-                </form>
-            </ul>
-        </div>
-    </nav>
+                <li class="col-md-3">
+                    <form class="form-inline col-12">
+                        <input class="searchbar form-control col-12" onchange="catch_link()" list="ccList" type="search" id="search"
+                            placeholder="Recherche" aria-label="Search">
+                        <!-- <button class="btn btn-outline-success col-md-4" type="submit"><i class="fa fa-search"></i></button> -->
+                    </form>
+                </li>
+                </ul>
+                <datalist id='ccList' class="col-2">
+                    <option value="L'amazonie en pirogue">L'amazonie en pirogue</option>
+                    <option value="Destination Amérique du Sud Amazonie">Destination Amérique du Sud Amazonie</option>
+                    <option value="Bali en VTC">Bali en VTC</option>
+                    <option value="Destination Asie Bali">Destination Asie Bali</option>
+                    <option value="Le Japon en train magnétique">Le Japon en train magnétique</option>
+                    <option value="Destination Asie Japon">Destination Asie Japon</option>
+                    <option value="La Croatie en catamaran">La Croatie en catamaran</option>
+                    <option value="Destination Europe Croatie">Destination Europe Croatie</option>
+                    <option value="Inspirations Culture">Inspirations Culture</option>
+                    <option value="Inspirations Gastronomie">Inspirations Gastronomie</option>
+                    <option value="Inspirations Nature">Inspirations Nature</option>
+                    <option value="Inspirations Navigation">Inspirations Navigation</option>
+                    <option value="Inspirations Rencontres">Inspirations Rencontres</option>
+                    <option value="Inspirations Sport">Inspirations Sport</option>
+                    <option value="Avril">Avril</option>
+                    <option value="Mai">Mai</option>
+                    <option value="Juin">Juin</option>
+                    <option value="Juillet">Juillet</option>
+                    <option value="Août">Août</option>
+                    <option value="Septembre">Septembre</option>
+                    <option value="Octobre">Octobre</option>
+                </datalist>
+                </div>
+                </nav>
 
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -204,99 +206,99 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="asset/photos/amazonie.jpg" class="d-block w-100" alt="Amazonie" id="rogner">
+                <img src="asset/photos/amazonie.jpg" class="d-block w-100" alt="Amazonie" id="rogner1">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">L'Amazonie en pirogue</h5>
+                    <h5 id="titrecaroussel1">L'Amazonie en pirogue</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/amazonie1.jpg" class="d-block w-100" alt="Amazonie" id="rogner">
+                <img src="asset/photos/amazonie1.jpg" class="d-block w-100" alt="Amazonie" id="rogner2">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">L'Amazonie en pirogue</h5>
+                    <h5 id="titrecaroussel2">L'Amazonie en pirogue</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/amazonie2.jpg" class="d-block w-100" alt="Amazonie" id="rogner">
+                <img src="asset/photos/amazonie2.jpg" class="d-block w-100" alt="Amazonie" id="rogner3">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">L'Amazonie en pirogue</h5>
+                    <h5 id="titrecaroussel3">L'Amazonie en pirogue</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/amazonie3.jpg" class="d-block w-100" alt="Amazonie" id="rogner">
+                <img src="asset/photos/amazonie3.jpg" class="d-block w-100" alt="Amazonie" id="rogner4">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">L'Amazonie en pirogue</h5>
+                    <h5 id="titrecaroussel4">L'Amazonie en pirogue</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/bali.jpg" class="d-block w-100" alt="Bali" id="rogner">
+                <img src="asset/photos/bali.jpg" class="d-block w-100" alt="Bali" id="rogner5">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">Bali en VTC</h5>
+                    <h5 id="titrecaroussel5">Bali en VTC</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/bali1.jpg" class="d-block w-100" alt="Bali" id="rogner">
+                <img src="asset/photos/bali1.jpg" class="d-block w-100" alt="Bali" id="rogner6">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">Bali en VTC</h5>
+                    <h5 id="titrecaroussel6">Bali en VTC</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/bali2.jpg" class="d-block w-100" alt="Bali" id="rogner">
+                <img src="asset/photos/bali2.jpg" class="d-block w-100" alt="Bali" id="rogner7">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">Bali en VTC</h5>
+                    <h5 id="titrecaroussel7">Bali en VTC</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/bali3.jpg" class="d-block w-100" alt="Bali" id="rogner">
+                <img src="asset/photos/bali3.jpg" class="d-block w-100" alt="Bali" id="rogner8">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">Bali en VTC</h5>
+                    <h5 id="titrecaroussel8">Bali en VTC</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/croatie.jpg" class="d-block w-100" alt="Croatie" id="rogner">
+                <img src="asset/photos/croatie.jpg" class="d-block w-100" alt="Croatie" id="rogner9">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">La Croatie en catamaran</h5>
+                    <h5 id="titrecaroussel9">La Croatie en catamaran</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/croatie1.jpg" class="d-block w-100" alt="Croatie" id="rogner">
+                <img src="asset/photos/croatie1.jpg" class="d-block w-100" alt="Croatie" id="rogner10">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">La Croatie en catamaran</h5>
+                    <h5 id="titrecaroussel10">La Croatie en catamaran</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/croatie2.jpg" class="d-block w-100" alt="Croatie" id="rogner">
+                <img src="asset/photos/croatie2.jpg" class="d-block w-100" alt="Croatie" id="rogner11">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">La Croatie en catamaran</h5>
+                    <h5 id="titrecaroussel11">La Croatie en catamaran</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/croatie3.jpg" class="d-block w-100" alt="Croatie" id="rogner">
+                <img src="asset/photos/croatie3.jpg" class="d-block w-100" alt="Croatie" id="rogner12">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">La Croatie en catamaran</h5>
+                    <h5 id="titrecaroussel12">La Croatie en catamaran</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/japon.jpg" class="d-block w-100" alt="Japon" id="rogner">
+                <img src="asset/photos/japon.jpg" class="d-block w-100" alt="Japon" id="rogner13">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">Le Japon en train magnétique</h5>
+                    <h5 id="titrecaroussel13">Le Japon en train magnétique</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/japon1.jpg" class="d-block w-100" alt="Japon" id="rogner">
+                <img src="asset/photos/japon1.jpg" class="d-block w-100" alt="Japon" id="rogner14">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">Le Japon en train magnétique</h5>
+                    <h5 id="titrecaroussel14">Le Japon en train magnétique</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/japon2.jpg" class="d-block w-100" alt="Japon" id="rogner">
+                <img src="asset/photos/japon2.jpg" class="d-block w-100" alt="Japon" id="rogner15">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">Le Japon en train magnétique</h5>
+                    <h5 id="titrecaroussel15">Le Japon en train magnétique</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="asset/photos/japon3.jpg" class="d-block w-100" alt="Japon" id="rogner">
+                <img src="asset/photos/japon3.jpg" class="d-block w-100" alt="Japon" id="rogner16">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 id="titrecaroussel">Le Japon en train magnétique</h5>
+                    <h5 id="titrecaroussel16">Le Japon en train magnétique</h5>
                 </div>
             </div>
         </div>
@@ -308,14 +310,13 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-        </a>
     </div>
     <section class="listArt row col-lg-12">
         <div class="row col-lg-12">
             <img src="asset/photos/aamazonie.jpg" alt="photoArt1" class="photoResArt col-lg-4">
             <div class="col-lg-8">
                 <h2 class="titleArt">L'Amazonie en pirogue</h2>
-                <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+                <ul class="inspiList list-unstyled list-inline col-lg-8 text-left">
                     <li class="list-inline-item">
                         <a class="btn-floating btn-in mx-1" href="inspiNavigation.html">
                             Navigation
@@ -357,7 +358,7 @@
             <img src="asset/photos/abali.jpg" alt="photoArt2" class="photoResArt col-lg-4">
             <div class="col-lg-8">
                 <h2 class="titleArt">Bali en VTC</h2>
-                <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+                <ul class="inspiList list-unstyled list-inline col-lg-8 text-left">
                     <li class="list-inline-item">
                         <a class="btn-floating btn-in mx-1" href="inspiNature.html">
                             Nature
@@ -399,7 +400,7 @@
             <img src="asset/photos/acroatie.jpg" alt="photoArt3" class="photoResArt col-lg-4">
             <div class="col-lg-8">
                 <h2 class="titleArt">La Croatie en catamaran</h2>
-                <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+                <ul class="inspiList list-unstyled list-inline col-lg-8 text-left">
                     <li class="list-inline-item">
                         <a class="btn-floating btn-in mx-1" href="inspiNavigation.html">
                             Navigation
@@ -436,7 +437,7 @@
             <img src="asset/photos/ajapon.jpg" alt="photoArt4" class="photoResArt col-lg-4">
             <div class="col-lg-8">
                 <h2 class="titleArt">Le Japon en train magnétique</h2>
-                <ul id="inspiList" class="list-unstyled list-inline col-lg-8 text-left">
+                <ul class="inspiList list-unstyled list-inline col-lg-8 text-left">
                     <li class="list-inline-item">
                         <a class="btn-floating btn-in mx-1" href="inspiRencontres.html">
                             Rencontres
@@ -508,12 +509,11 @@
             </ul>
             <!-- Social buttons -->
         </div>
-        </div>
         <!-- Footer Elements -->
     
     </footer>
     <!-- Footer -->
-    </div>
+    
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
