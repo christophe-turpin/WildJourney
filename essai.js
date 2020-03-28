@@ -56,3 +56,14 @@ function mobile_link() {
         }
     }
 }
+
+window.onload =
+    function () {
+        $('#carouselExampleCaptions').Carousel(
+            {
+                items: 'img',
+                reflections: .5,
+                rotationSpeed: 1.8
+            }
+        );
+    }
